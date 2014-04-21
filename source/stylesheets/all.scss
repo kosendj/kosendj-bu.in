@@ -2,7 +2,6 @@
 
 body {
   background: #d4d4d4 url("../images/background.png");
-  text-align: center;
   font-family: sans-serif;
 }
 
@@ -17,28 +16,34 @@ h1 {
   margin: 0;
 }
 
-.doc {
-  font-size: 14px;
-  margin: 0;
-  &:before, &:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•";
-  }
-  a {
-    color: rgba(0, 0, 0, 0.3);
-    &:hover {
-      color: #666;
-    }
-  }
+.container {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .welcome {
   margin-top: 30px;
+  text-align: center;
+
+  img {
+    width: 400px;
+  }
+}
+
+img.animation {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
+}
+
+.members {
+  ul {
+    list-style: none;
+    li {
+      img {
+        width: 150px;
+      }
+    }
+  }
 }
 
 @-webkit-keyframes welcome {

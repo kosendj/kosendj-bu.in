@@ -1,6 +1,20 @@
 ---
-title: KosenDJ部
+title: Kosendj-bu
 ---
 
-.welcome
-  = image_tag("images/logo.png", srcset: "images/logo@2x.png 2x")
+.container
+  .welcome
+    = image_tag("images/logo.png", srcset: "images/logo@2x.png 2x", class: "animation")
+
+  .event
+    h2 kosendj-bu #1
+    .summary
+      | TBD
+
+  .members
+    h2 部員
+    ul.row
+      - data.members.each do |member|
+        li.col-md-2
+          = link_to "/#{member.name}" do
+            = image_tag(member.icon, srcset: "/images/#{member.try(:icon2x)} 2x", class: "animation")
