@@ -14,7 +14,10 @@
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+members = YAML.load_file("data/members.yml").map { |m| m["name"] }
+members.each_with_index do |member, index|
+  proxy "/#{member}", "/member.html", locals: { index: index }
+end
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
