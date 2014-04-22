@@ -13,3 +13,23 @@
     -
       name: twitter
       url: http://twitter.com/asonas
+  name: rooandqoo
+  icon: "members/rooandqoo.png"
+  description: ルーアンドクーです
+  activities:
+    -
+      comment: this is comment
+      embed: 
+  services:
+    -
+      name: web
+      url: http://rooandqoo.com
+    -
+      name: mixcloud
+      url: http://mixcloud.com/rooandqoo
+    -
+      name: twitter
+      url: http://twitter.com/asonas
+    -
+      name: tumblr
+      url: http://rooandqoo.tumblr.com/
