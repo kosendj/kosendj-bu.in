@@ -13,13 +13,14 @@
     -
       name: twitter
       url: http://twitter.com/asonas
+-
   name: rooandqoo
   icon: "members/rooandqoo.png"
   description: ルーアンドクーです
   activities:
     -
       comment: this is comment
-      embed: 
+      embed:
   services:
     -
       name: web
