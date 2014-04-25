@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 body {
-  background: #d4d4d4 url("../images/background.png");
   font-family: sans-serif;
+  background-color: #f7f3f9;
 }
 
 h1 {
@@ -22,11 +22,14 @@ h1 {
 }
 
 .welcome {
-  margin-top: 30px;
-  text-align: center;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fbfbfb;
 
   img {
-    width: 400px;
+    width: 380px;
+    text-align: center;
   }
 }
 
