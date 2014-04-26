@@ -34,3 +34,22 @@
     -
       name: tumblr
       url: http://rooandqoo.tumblr.com/
+
+-
+  name: jigsaw
+  icon: "members/jigsaw.png"
+  description: 朝目が覚めたら Funk/Soul のミックスを聞きながら支度をして、出社したら EDM を聞きながらコードを書いて、帰宅したら Classical を聞きながら本を読む生活をしています。
+  activities:
+    -
+      comment: this is comment
+      embed:
+  services:
+    -
+      name: web
+      url: http://jgs.me
+    -
+      name: mixcloud
+      url: http://mixcloud.com/neo6120
+    -
+      name: last.fm
+      url: http://last.fm/user/neo6120
