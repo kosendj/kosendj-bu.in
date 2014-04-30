@@ -1,7 +1,7 @@
 -
   name: asonas
   icon: "members/asonas.png"
-  description: this is description
+  description: アニソンのシャワーを浴びてます。
   activities:
     -
       embed:
