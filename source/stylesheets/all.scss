@@ -54,6 +54,17 @@ img.animation {
   background-color: #92989d;
   color: #5e676e;
 
+  .map {
+    position: relative;
+
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 566px;
+      height: 300px;
+    }
+  }
 }
 
 .timetable {
