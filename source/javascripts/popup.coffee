@@ -3,8 +3,6 @@ $ ->
     $(".panel").addClass("hidden")
     name = $(this).parents(".icon").data("name")
     $panel = $(".js-#{name}")
-    marginLeft = ($(window).width() - ($panel.width() / 100 * $(window).width())) / 2 #suck
-    $panel.css({marginLeft: marginLeft})
     $panel.removeClass("hidden")
 
 
