@@ -87,21 +87,68 @@ img.animation {
   background-color: #49535b;
   color: #fff;
 
-  h2 {
-    font-color: $light-color;
-  }
+  .inner {
+    position: relative;
 
-  ul {
-    list-style: none;
+    h2 {
+      font-color: $light-color;
+    }
 
-    li {
-      text-align: center;
+    ul {
+      list-style: none;
 
-      img {
-        width: 250px;
-        border-radius: 50%;
-        -moz-transition: 1s ease-in-out;
-        -webkit-transition: 1s ease-in-out;
+      li {
+        text-align: center;
+
+        img {
+          width: 250px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .panel {
+      position: absolute;
+      width: 80%;
+      height: 400px;
+      border-radius: 0;
+      border: none;
+      z-index: 100;
+      box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.5);
+      color: $default-color;
+
+      .close  {
+        position: absolute;
+        top: -50px;
+        right: 0;
+
+        i {
+          font-size: 50px;
+          color: #000;
+        }
+      }
+
+      .icon {
+        float: left;
+
+        img {
+          width: 400px;
+        }
+      }
+
+      .profile {
+        padding-top: 30px;
+        margin-left: 430px;
+        min-height: 340px;
+      }
+
+      .services {
+        text-align: right;
+        margin-right: 20px;
+
+        .service {
+          margin-right: 10px;
+        }
       }
     }
   }

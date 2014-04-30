@@ -56,12 +56,31 @@ title: Kosendj-bu
 
 .members
   .container
-    h2 Members
-    ul.row
-      - data.members.each do |member|
-        li.col-md-4
-          .icon
-            = image_tag(member.icon, class: "animation clickable")
+    .inner
+      h2 Members
+      ul.row
+        - data.members.each do |member|
+          li.col-md-4
+            .icon(data-name="#{member.name}")
+              = image_tag(member.icon, class: "animation clickable js-popup")
+          .panel.hidden(class="js-#{member.name}")
+            .close.js-close
+              i.fa.fa-times
+            .icon
+              = image_tag(member.icon)
+            .profile
+              h3.name
+                = member.name
+              .description
+                = member.description
+              ul.activities
+               - member.activities.take(3).each do |activity|
+                li.activity
+                  = activity.embed
+            .services
+              - member.services.each do |service|
+                = link_to service.url, class: "service" do
+                  = image_tag "/images/services/#{service.name}.png"
 
 .footer
   .container
