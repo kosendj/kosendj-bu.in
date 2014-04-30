@@ -1,11 +1,74 @@
 ---
 title: Kosendj-bu
 ---
+.welcome
+  .container
+    .row
+      .col-md-5
+        .description
+          h1 KosenDJ-bu #1
+          p 2014/5/31(土) 15:00 - 21:00
+          p ticket ¥2000 @sabaco
+      .col-md-7
+        .logo
+          = image_tag("images/logo.png", srcset: "images/logo@2x.png 2x", class: "animation")
+
+.access
+  .container
+    h2 Access
+    .row
+      .col-md-6
+        p sabaco
+        p  東京都新宿区西早稲田2-1-19 YKビル B1F
+        p http://sabaco.jp/access/
+      .col-md-6
+        .map
+          iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.9115175903696!2d139.71805769460187!3d35.705972178635186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2s!4v1398425939740" width="566" height="200" frameborder="0" style="border:0"
+
+.timetable
+  .container
+    h2 Time table
+    table.table.table-striped
+      tbody
+        tr
+          td asonas
+          td NERD
+        tr
+          td RooandQoo
+          td trance
+        tr
+          td e-jigsaw
+          td IDOLCORE
+        tr
+          td mactkg
+          td INTERNET
+        tr
+          td hirokiTOI
+          td HARDCORE TECHNO?
+        tr
+          td maccha
+          td game music
+        tr
+          td frkout
+          td TBD
 
 .members
-  h2 部員
-  ul.row
-    - data.members.each do |member|
-      li.col-md-2
-        = link_to "/#{member.name}" do
-          = image_tag(member.icon, class: "animation")
+  .container
+    h2 Members
+    ul.row
+      - data.members.each do |member|
+        li.col-md-4
+          .icon
+            = image_tag(member.icon, class: "animation clickable")
+
+.footer
+  .container
+    .links
+      span
+        = link_to "About", "/#about"
+      span
+        = link_to "Access", "/#access"
+      span
+        = link_to "Timetable", "/#timetable"
+      span
+        = link_to "Members", "/#members"
