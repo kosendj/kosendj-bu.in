@@ -69,6 +69,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'gh-pages'
+  deploy.method = :rsync
+  deploy.user   = "asonas"
+  deploy.host   = "kosendj-bu.in"
+  deploy.path   = "/var/www/kosendj-bu.in"
 end
