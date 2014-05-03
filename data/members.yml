@@ -50,3 +50,25 @@
     -
       name: last.fm
       url: http://last.fm/user/neo6120
+
+
+-
+  name: mactkg
+  icon: "members/mactkg.png"
+  description: feature-funkって知ってる?!
+  activities:
+    -
+      embed: 
+  services:
+    -
+      name: web
+      url: http://makerbox.net
+    -
+      name: mixcloud
+      url: http://mixcloud.com/mactkg
+    -
+      name: soundcloud
+      url: http://soundcloud.com/mactkg
+    -
+      name: last.fm
+      url: http://last.fm/user/haraboo
