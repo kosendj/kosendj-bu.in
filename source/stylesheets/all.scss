@@ -14,24 +14,110 @@ img.animation {
 
 @media (min-width: 765px) {
   .welcome {
-    padding-top: 100px;
+    padding-top: 30px;
+
     .description {
       padding-top: 100px;
     }
   }
 }
 
+@media (max-width: 990px) {
+  .welcome {
+    .description {
+      padding: 0 !important;
+    }
+  }
+
+
+
+  .access {
+    background-image: none !important;
+    background-color: #a3a9ac;
+  }
+
+  .timetable {
+    background-image: none !important;
+  }
+}
+
+.members {
+  position: relative;
+  .rug {
+    position: absolute;
+    top: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+  }
+}
+
+@media (min-width: 951px) {
+  .members {
+    .inner {
+      .panel {
+        top: -20px;
+        left: -115px;
+        width: 900px;
+        height: 400px;
+
+        .profile {
+          padding-top: 30px;
+          margin-left: 430px;
+          min-height: 340px;
+        }
+
+        .icon {
+          float: left;
+
+          img {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .members {
+    .inner {
+      .panel {
+        width: 85%;
+        top: 10%;
+        left: 8%;
+
+        .profile {
+          padding-top: 10px;
+          margin: 0 5px;
+          min-height: 140px;
+        }
+
+        .icon {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 
 .welcome {
-  padding-bottom: 200px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-bottom: 70px;
   background-color: #fff;
+  background-image: url("/images/background_1.png");
+  background-size: 1300px 545px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  max-height: 545px;
   color: #48525b;
 
   img {
     padding-top: 10px;
     width: 100%;
+    max-width: 400px;
     text-align: center;
   }
 
@@ -59,13 +145,36 @@ img.animation {
   }
 }
 
+.access-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 416px;
+  background-color: #49555b;
+  opacity: 0.5;
+  z-index: 1000;
+}
+
 .access {
-  padding: 50px 0 130px;
-  background-color: #92989d;
-  color: #5e676e;
+  position: relative;
+  padding: 0px 0 58px;
+  background-image: url("/images/background_2.png");
+  background-size: 1736px 416px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  color: #000;
+
+  h2 {
+    color: #fff;
+  }
 
   .information {
     font-size: 20px;
+
+    p.link {
+      padding: 20px 0 0;
+    }
   }
 
   .map {
@@ -82,23 +191,37 @@ img.animation {
 }
 
 .timetable {
+  background-image: url("/images/background_3.png");
+  background-size: 1736px 677px;
+  background-repeat: no-repeat;
+  background-position: left top;
   padding-top: 50px;
   padding-bottom: 170px;
 
   .table {
     max-width: 600px;
     margin:0 auto;
+
+    tr:nth-child(1n) {
+      background-color: #d8dbdb;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #fff;
+    }
   }
 }
 
 .members {
   padding-top: 50px;
-  padding-bottom: 170px;
+  padding-bottom: 100px;
   background-color: #49535b;
   color: #fff;
 
   .inner {
     position: relative;
+    max-width: 670px;
+    margin: 0 auto;
 
     h2 {
       font-color: $light-color;
@@ -109,21 +232,28 @@ img.animation {
       list-style: none;
 
       li.member {
+        position: relative;
         text-align: center;
         margin-bottom: 40px;
 
-        img {
-          width: 250px;
+        .image-cutter {
+          position: absolute;
+          top: 50%;
+          left: 50%;
           border-radius: 50%;
+          width: 170px;
+          background-color: #49555B;
+
+        }
+
+        img {
+          width: 172px;
         }
       }
     }
 
     .panel {
       position: absolute;
-      width: 900px;
-      height: 400px;
-      margin-left: 110px;
       border-radius: 0;
       border: none;
       z-index: 100;
@@ -141,26 +271,21 @@ img.animation {
         }
       }
 
-      .icon {
-        float: left;
-
-        img {
-          width: 400px;
-        }
-      }
 
       .profile {
-        padding-top: 30px;
-        margin-left: 430px;
-        min-height: 340px;
       }
 
       .services {
         text-align: right;
         margin-right: 20px;
+        margin-bottom: 15px;
 
         .service {
           margin-right: 10px;
+
+          img {
+            width: 32px;
+          }
         }
       }
     }
@@ -170,13 +295,18 @@ img.animation {
 .footer {
   padding-top: 150px;
   padding-bottom: 40px;
+  background-image: url("/images/background_4.png");
+  background-size: 2418px 708px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 
   .links {
     border-bottom: 1px solid $default-color;
 
     span {
-      padding: 0 20px;
+      padding: 0 8px;
       border-left: 1px solid $default-color;
+      font-size: 11px;
 
       a {
         color: $default-color;

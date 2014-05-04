@@ -4,7 +4,8 @@ $ ->
     name = $(this).parents(".icon").data("name")
     $panel = $(".js-#{name}")
     $panel.removeClass("hidden")
+    $(".rug").removeClass("hidden")
 
-
-  $(".js-close").click ->
-    $(this).parents(".panel").addClass("hidden")
+  $(".js-close, .rug").click ->
+    $(".panel").addClass("hidden")
+    $(".rug").addClass("hidden")
