@@ -69,3 +69,17 @@
     -
       name: last.fm
       url: http://last.fm/user/haraboo
+-
+  name: maccha
+  icon: "members/maccha.png"
+  description: 最近はエオルゼアに引き篭もってばかり。初DJで緊張している。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: web
+      url: http://midnightblue.jp/blog/
+    -
+      name: twitter
+      url: http://twitter.com/maccha
