@@ -15,7 +15,7 @@
 -
   name: rooandqoo
   icon: "members/rooandqoo.png"
-  description: ルーアンドクーです
+  description: 双子の娘の父業をしつつ、会社勤めをしています。烏龍茶とトランスが燃料です
   activities:
     -
       embed:
@@ -28,7 +28,7 @@
       url: http://mixcloud.com/rooandqoo
     -
       name: twitter
-      url: http://twitter.com/asonas
+      url: http://twitter.com/rooandqoo
     -
       name: tumblr
       url: http://rooandqoo.tumblr.com/
