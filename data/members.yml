@@ -32,7 +32,6 @@
     -
       name: tumblr
       url: http://rooandqoo.tumblr.com/
-
 -
   name: jigsaw
   icon: "members/jigsaw.png"
@@ -50,15 +49,13 @@
     -
       name: last.fm
       url: http://last.fm/user/neo6120
-
-
 -
   name: mactkg
   icon: "members/mactkg.png"
   description: feature-funkって知ってる?!
   activities:
     -
-      embed: 
+      embed:
   services:
     -
       name: web
