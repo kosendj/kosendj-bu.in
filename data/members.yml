@@ -83,3 +83,17 @@
     -
       name: twitter
       url: http://twitter.com/maccha
+-
+  name: toihrk
+  icon: "members/toihrk.png"
+  description: 最近はダーツにハマってます。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: web
+      url: http://dj.toihrk.me
+    -
+      name: twitter
+      url: http://twitter.com/toihrk
