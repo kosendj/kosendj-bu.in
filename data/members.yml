@@ -97,3 +97,31 @@
     -
       name: twitter
       url: http://twitter.com/toihrk
+-
+  name: y_taq
+  icon: "members/y_taq.png"
+  description: 栃木県のハードコア初心者DJ。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: http://twitter.com/y_taq
+    -
+      name: mixcloud
+      url: http://mixcloud.com/ytaq
+-
+  name: XEN
+  icon: "members/xen.png"
+  description: 曲作る人なのでDJとかわかんないです＞＜
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: http://twitter.com/xen_xxx
+    -
+      name: soundcloud
+      url: http://soundcloud.com/suu712
