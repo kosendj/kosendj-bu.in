@@ -125,3 +125,20 @@
     -
       name: soundcloud
       url: http://soundcloud.com/suu712
+-
+  name: 八嶋
+  icon: "members/八嶋.png"
+  description: 初DJ。普段は曲を作っています。DRUM'N'BASSを中心に色々とかけていきます。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: https://twitter.com/AmaneKudoh
+    -
+      name: soundcloud
+      url: https://soundcloud.com/8_to_7
+    -
+      name: bandcamp
+      url: http://8to7.bandcamp.com/
