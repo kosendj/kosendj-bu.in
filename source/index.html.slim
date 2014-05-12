@@ -36,27 +36,12 @@ title: Kosendj-bu
     h2 Time table
     table.table.table-striped
       tbody
-        tr
-          td asonas
-          td NERD
-        tr
-          td RooandQoo
-          td trance
-        tr
-          td e-jigsaw
-          td IDOLCORE
-        tr
-          td mactkg
-          td INTERNET
-        tr
-          td hirokiTOI
-          td HARDCORE TECHNO?
-        tr
-          td maccha
-          td game music
-        tr
-          td frkout
-          td TBD
+        - data.timetable.each do |tt|
+          tr
+            td.time
+              = tt.time
+            td
+              = tt.dj
 
 .members
   .container

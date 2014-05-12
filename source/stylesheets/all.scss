@@ -190,7 +190,7 @@ img.animation {
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 50px;
-  padding-bottom: 170px;
+  padding-bottom: 140px;
 
   .table {
     max-width: 600px;
@@ -202,6 +202,10 @@ img.animation {
 
     tr:nth-child(2n) {
       background-color: #fff;
+    }
+
+    .time {
+      text-align: center;
     }
   }
 }
