@@ -29,8 +29,6 @@ img.animation {
     }
   }
 
-
-
   .access {
     background-image: none !important;
     background-color: #a3a9ac;
@@ -39,10 +37,27 @@ img.animation {
   .timetable {
     background-image: none !important;
   }
+
+  .footer {
+    .links {
+      border-bottom: 1px solid $default-color;
+
+      span {
+        padding: 0 8px;
+        border-left: 1px solid $default-color;
+        font-size: 11px;
+
+        a {
+          color: $default-color;
+        }
+      }
+    }
+  }
 }
 
 .members {
   position: relative;
+
   .rug {
     position: absolute;
     top: 0;
@@ -78,6 +93,25 @@ img.animation {
       }
     }
   }
+
+  .footer {
+    .links {
+      border-bottom: 1px solid $default-color;
+
+      span {
+        padding: 0 15px;
+        border-left: 1px solid $default-color;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+
+        a {
+          color: $default-color;
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 950px) {
@@ -114,11 +148,15 @@ img.animation {
   max-height: 545px;
   color: #48525b;
 
-  img {
-    padding-top: 10px;
-    width: 100%;
-    max-width: 400px;
+  .logo {
     text-align: center;
+
+    img {
+      padding-top: 10px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
   }
 
   .description {
@@ -212,7 +250,7 @@ img.animation {
 
 .members {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   background-color: #49535b;
   color: #fff;
 
@@ -299,19 +337,6 @@ img.animation {
   background-repeat: no-repeat;
   background-position: left bottom;
 
-  .links {
-    border-bottom: 1px solid $default-color;
-
-    span {
-      padding: 0 8px;
-      border-left: 1px solid $default-color;
-      font-size: 11px;
-
-      a {
-        color: $default-color;
-      }
-    }
-  }
 }
 
 @-webkit-keyframes welcome {
