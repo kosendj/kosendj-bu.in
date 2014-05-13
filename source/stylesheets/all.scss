@@ -94,6 +94,10 @@ img.animation {
     }
   }
 
+  .logo {
+    text-align: right;
+  }
+
   .footer {
     .links {
       border-bottom: 1px solid $default-color;
@@ -136,6 +140,11 @@ img.animation {
       }
     }
   }
+
+  .logo {
+    text-align: center;
+  }
+
 }
 
 .welcome {
@@ -149,8 +158,6 @@ img.animation {
   color: #48525b;
 
   .logo {
-    text-align: center;
-
     img {
       padding-top: 10px;
       width: 100%;
