@@ -1,6 +1,7 @@
 -
   name: asonas
   icon: "members/asonas.png"
+  circle_icon: "members/asonas_circle.png"
   description: 頭に猫を乗っけていないと体のバランスが取れないです
   activities:
     -
@@ -15,6 +16,7 @@
 -
   name: rooandqoo
   icon: "members/rooandqoo.png"
+  circle_icon: "members/rooandqoo_circle.png"
   description: 双子の娘の父業をしつつ、会社勤めをしています。烏龍茶とトランスが燃料です
   activities:
     -
@@ -35,6 +37,7 @@
 -
   name: jigsaw
   icon: "members/jigsaw.png"
+  circle_icon: "members/jigsaw_circle.png"
   description: 朝目が覚めたら Funk/Soul のミックスを聞きながら支度をして、出社したら EDM を聞きながらコードを書いて、帰宅したら Classical を聞きながら本を読む生活をしています。
   activities:
     -
@@ -52,6 +55,7 @@
 -
   name: mactkg
   icon: "members/mactkg.png"
+  circle_icon: "members/mactkg_circle.png"
   description: feature-funkって知ってる?!
   activities:
     -
@@ -72,6 +76,7 @@
 -
   name: maccha
   icon: "members/maccha.png"
+  circle_icon: "members/maccha_circle.png"
   description: 最近はエオルゼアに引き篭もってばかり。初DJで緊張している。
   activities:
     -
@@ -86,6 +91,7 @@
 -
   name: toihrk
   icon: "members/toihrk.png"
+  circle_icon: "members/toihrk_circle.png"
   description: 最近はダーツにハマってます。
   activities:
     -
@@ -100,6 +106,7 @@
 -
   name: y_taq
   icon: "members/y_taq.png"
+  circle_icon: "members/y_taq_circle.png"
   description: 栃木県のハードコア初心者DJ。
   activities:
     -
@@ -114,6 +121,7 @@
 -
   name: XEN
   icon: "members/xen.png"
+  circle_icon: "members/xen_circle.png"
   description: 曲作る人なのでDJとかわかんないです＞＜
   activities:
     -
@@ -127,7 +135,8 @@
       url: http://soundcloud.com/suu712
 -
   name: 八嶋
-  icon: "members/八嶋.png"
+  icon: "members/yashima.png"
+  circle_icon: "members/yashima_circle.png"
   description: 初DJ。普段は曲を作っています。DRUM'N'BASSを中心に色々とかけていきます。
   activities:
     -

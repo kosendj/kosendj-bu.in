@@ -52,7 +52,7 @@ title: Kosendj-bu
           li.col-md-4.member
             .icon(data-name="#{member.name}")
               .image-cutter
-              = image_tag("/images/members/#{member.name}_circle.png", class: "animation clickable js-popup")
+              = image_tag(member.circle_icon, class: "animation clickable js-popup")
           .panel.hidden(class="js-#{member.name}")
             .close.js-close
               i.fa.fa-times
