@@ -151,3 +151,15 @@
     -
       name: bandcamp
       url: http://8to7.bandcamp.com/
+-
+  name: 便座チープ
+  icon: "members/frkout.png"
+  circle_icon: "members/frkout_circle.png"
+  description: "jazz/hadoop/funk/ビッグデータ/soul"
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: frkout
