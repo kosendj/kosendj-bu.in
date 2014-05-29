@@ -73,4 +73,5 @@ activate :deploy do |deploy|
   deploy.user   = "asonas"
   deploy.host   = "kosendj-bu.in"
   deploy.path   = "/var/www/kosendj-bu.in"
+  deploy.build_before = true
 end
