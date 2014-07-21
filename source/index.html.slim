@@ -33,18 +33,6 @@ title: Kosendj-bu
               .cover
               iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.9115175903696!2d139.71805769460187!3d35.705972178635186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2s!4v1398425939740" width="100%" height="240" frameborder="0" style="border:0"
 
-.timetable
-  .container
-    h2 Time table
-    table.table.table-striped
-      tbody
-        - data.timetable.each do |tt|
-          tr
-            td.time
-              = tt.time
-            td
-              = tt.dj
-
 .members
   .container
     .inner
