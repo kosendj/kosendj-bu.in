@@ -41,8 +41,29 @@ title: Kosendj-bu
   .container
     h2 Time table
 
-    .text-center
-      strong COMING SOON
+    .row
+      .col-sm-6
+
+        h3.text-center 07/09 (Sut.)
+        table.table.table-striped
+          tbody
+            - data.timetable09.each do |tt|
+              tr
+                td.time
+                  = tt.time
+                td
+                  = tt.dj
+
+      .col-sm-6
+        h3.text-center 7/23 (Sut.)
+        table.table.table-striped
+          tbody
+            - data.timetable23.each do |tt|
+              tr
+                td.time
+                  = tt.time
+                td
+                  = tt.dj
 
 .members
   .container

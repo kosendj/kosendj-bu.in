@@ -181,12 +181,16 @@ img.animation {
 .access,
 .timetable,
 .members {
-  h2 {
+  h2, h3 {
     padding-bottom: 50px;
     text-align: center;
     font-weight: 100;
     letter-spacing: 0.100em;
     font-color: $default-color;
+  }
+
+  h3 {
+    padding-bottom: 0;
   }
 }
 
