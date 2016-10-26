@@ -40,7 +40,16 @@ title: Kosendj-bu
 
     .row
       .text-center
-        | comming soon...
+        h3.text-center 11/26(土)
+        table.table.table-striped
+          tbody
+            - data.timetable.each do |tt|
+              tr
+                td.time
+                  = tt.time
+                td.text-left
+                  = tt.dj
+
 .members#members
   .container
     .inner
