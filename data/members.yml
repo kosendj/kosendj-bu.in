@@ -181,3 +181,21 @@
     -
       name: soundcloud
       url: https://soundcloud.com/soraher
+-
+  name: unasuke
+  icon: "members/unasuke.png"
+  circle_icon: "members/unasuke_circle.png"
+  description: ブースで飛び跳ねる
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: web
+      url: https://unasuke.com
+    -
+      name: twitter
+      url: http://twitter.com/yu_suke1994
+    -
+      name: mixcloud
+      url: https://www.mixcloud.com/yu_suke1994
