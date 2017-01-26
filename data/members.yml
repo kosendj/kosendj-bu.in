@@ -199,3 +199,20 @@
     -
       name: mixcloud
       url: https://www.mixcloud.com/yu_suke1994
+-
+  name: Takayuki Tominaga
+  icon: "members/tominaga.png"
+  circle_icon: "members/tominaga_circle.png"
+  description: |-
+    <p>a.k.a. とーかさん</p>
+    <p>ジャンル名にHardがついている曲は大体好きな傾向があります。</p>
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: http://twitter.com/touka_tt
+    -
+      name: mixcloud
+      url: https://www.mixcloud.com/touka_tt/
