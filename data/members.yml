@@ -210,7 +210,7 @@
   services:
     -
       name: web
-      url: https://unasuke.com
+      url: http://holygrail.hatenablog.com/
     -
       name: twitter
       url: http://twitter.com/HolyGrail
