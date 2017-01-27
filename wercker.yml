@@ -1,0 +1,14 @@
+box: ruby:2.4.0
+
+build:
+  steps:
+    - bundle-install
+    - script:
+      name: Middleman build
+      code: bundle exec middleman build --verbose
+
+deploy:
+  - gh-pages:
+    token: $GITHUB_TOKEN
+    domain: kosendj-bu.in
+    basedir: build
