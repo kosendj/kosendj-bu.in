@@ -175,7 +175,7 @@
     -
       embed:
   services:
-    - 
+    -
       name: twitter
       url: https://twitter.com/sora_h
     -
@@ -198,4 +198,22 @@
       url: http://twitter.com/yu_suke1994
     -
       name: mixcloud
+      url: https://www.mixcloud.com/yu_suke1994
+-
+  name: HolyGrail
+  icon: "members/holygrail.png"
+  circle_icon: "members/holygrail_circle.png"
+  description: 俺がiTunesだ！本当のGeniusってやつを魅せてやるぜ！
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: web
+      url: https://unasuke.com
+    -
+      name: twitter
+      url: http://twitter.com/HolyGrail
+    -
+      name: soundcloud
       url: https://www.mixcloud.com/yu_suke1994
