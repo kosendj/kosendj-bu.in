@@ -217,3 +217,18 @@
     -
       name: soundcloud
       url: https://soundcloud.com/holygrail81
+-
+  name: Takayuki&nbsp;Tominaga
+  icon: "members/tominaga.png"
+  circle_icon: "members/tominaga_circle.png"
+  description: a.k.a. とーかさん<br>ジャンル名にHardがついている曲は大体好きな傾向があります。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: http://twitter.com/touka_tt
+    -
+      name: mixcloud
+      url: https://www.mixcloud.com/touka_tt/
