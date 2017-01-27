@@ -4,6 +4,9 @@ build:
   steps:
     - bundle-install
     - script:
+      name: install dependency
+      code: apt update && apt install -y nodejs
+    - script:
       name: Middleman build
       code: bundle exec middleman build --verbose
 
