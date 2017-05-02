@@ -73,3 +73,5 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'
 end
+
+activate :autoprefixer
