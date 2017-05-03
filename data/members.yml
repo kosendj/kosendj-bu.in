@@ -232,3 +232,21 @@
     -
       name: mixcloud
       url: https://www.mixcloud.com/touka_tt/
+-
+  name: furaji
+  icon: "members/furaji.png"
+  circle_icon: "members/furaji_circle.png"
+  description: 将来の夢は女子中学生です
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: http://twitter.com/furaji
+    -
+      name: mixcloud
+      url: https://www.mixcloud.com/furaji/
+    -
+      name: soundcloud
+      url: https://soundcloud.com/furaji
