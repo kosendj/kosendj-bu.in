@@ -15,6 +15,16 @@
   }
 }
 
+@media screen and (max-width:480px) {
+  .hero {
+    min-height: 480px;
+
+    h1.caption {
+      padding-top: 350px;
+    }
+  }
+}
+
 $blur_size: 8px;
 
 .hero:before{

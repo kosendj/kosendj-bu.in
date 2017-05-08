@@ -76,6 +76,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .event {
+    .datetime {
+      font-size: 2rem;
+    }
+  }
+}
+
 .black-container {
   background-color: $dark_blue;
   color: #fff;
@@ -109,16 +117,49 @@ footer {
         }
       }
     }
+
     .left {
       float: left;
     }
     .right {
       margin-left: 120px;
+
+      .profile {
+        padding-top: 10px;
+      }
     }
   }
   .member:nth-last-child(2),
   .member:last-child {
     border-bottom: 1px solid $border_line;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .members {
+    width: 90%;
+
+    .member {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      min-height: 100px;
+
+      .left {
+        .icon {
+          img {
+            width: 65px;
+          }
+        }
+      }
+
+      .right {
+        margin-left: 80px;
+
+        .profile {
+          padding-top: 6px;
+        }
+      }
+    }
   }
 }
 
@@ -144,11 +185,49 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .time-table {
+    width: 100%;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .venues {
   .hako {
     margin-bottom: 30px;
   }
   .map {
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .venues {
+    padding: 0 15px;
+    div.text-center {
+      text-align: left;
+
+      p.address {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      p.text-yellow.hako {
+        margin-bottom: 20px;
+      }
+
+      p {
+      }
+    }
+    .map {
+      iframe {
+        width: 100%;
+      }
+    }
   }
 }
