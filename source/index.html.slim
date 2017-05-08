@@ -13,35 +13,36 @@ header
 .hero
   .container
     .logo
+      = image_tag "", alt: "高専DJ部"
     h1.caption.text-center
       | 「高専DJ部」は高専生やそのOB/OGが集まってDJをやる部活動です。
 
-.container.event
+.container.event(name="event")
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
     span.yellow-border.md 2017.06.17(Sat.) 14:00 - 20:00
   .text-center.venue @sabaco
-  .sq-btn.sq-btn-blue.text-center
+  a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
+a(name="dj")
 .black-container
   h2.ex-header.text-center DJ
   .members
-    - data.members.each_slice(2) do |members|
-      .row
-        - members.each do |member|
-          .col-md-6.member
-            .border
-              .left
-                .icon
-                  = image_tag(member.icon, width: "100px")
-              .right
-                strong
-                  span.name = member.name
-                  - member&.services.each do |service|
-                    = link_to service.url, class: "service" do
-                      = image_tag "/images/services/#{service.name}.png", width: "10px"
-                .profile = member.description
+    - data.members.each do |member|
+      .member
+        .border
+          .left
+            .icon
+              = image_tag(member.icon, width: "100px")
+          .right
+            strong
+              span.name = member.name
+              - member&.services.each do |service|
+                = link_to service.url, class: "service" do
+                  = image_tag "/images/services/#{service.name}.png", width: "10px"
+            .profile = member.description
+a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
   p.text-center 2017.06.17 (Sat.) 14:00-20:00 @sabaco
@@ -57,6 +58,7 @@ header
               | &nbsp;:&nbsp;
               = tt.genre
 
+a(name="access")
 .black-container.venues
   h2.ex-header.text-center.access ACCESS
   .text-center

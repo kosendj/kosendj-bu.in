@@ -53,6 +53,7 @@ footer {
   }
 
   .sq-btn {
+    display: block;
     background-color: $blue;
     color: #fff;
     width: 230px;
@@ -61,6 +62,17 @@ footer {
     margin: 0 auto;
     vertical-align: middle;
     line-height: 30px;
+
+    a {
+    }
+  }
+  .sq-btn:hover {
+    background-color: #fff;
+    border: 3px solid $blue;
+    min-height: 44px;
+    line-height: 24px;
+    color: $blue;
+    text-decoration: none;
   }
 }
 
@@ -71,14 +83,23 @@ footer {
 
 .members {
   width: 80%;
+  max-width: 820px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
 
   .member {
+    min-height: 120px;
     padding-top: 22px;
     padding-bottom: 22px;
     margin: 0px 0;
-
     border-top: 1px solid $border_line;
+    width: 386px;
+    display: flex;
 
     .name {
       border-bottom: 1px solid $yellow;
@@ -92,8 +113,12 @@ footer {
       float: left;
     }
     .right {
-      margin-left: 110px;
+      margin-left: 120px;
     }
+  }
+  .member:nth-last-child(2),
+  .member:last-child {
+    border-bottom: 1px solid $border_line;
   }
 }
 
