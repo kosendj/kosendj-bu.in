@@ -141,7 +141,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 945px) {
   .members {
     width: 90%;
 
@@ -149,6 +149,8 @@ header {
       padding-top: 11px;
       padding-bottom: 11px;
       min-height: 100px;
+      margin: 0 auto;
+      width: 90%;
 
       .left {
         .icon {
