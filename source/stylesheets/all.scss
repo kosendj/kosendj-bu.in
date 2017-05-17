@@ -26,6 +26,22 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  header {
+    height: 55px;
+
+    ul {
+      margin-top: 17px;
+      padding-left: 10px;
+
+      li {
+        margin-left: 7px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 .footer {
   background-color: $dark_blue;
   color: #fff;
