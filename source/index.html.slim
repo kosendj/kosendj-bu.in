@@ -2,12 +2,13 @@
 title: Kosendj-bu
 ---
 header
-  a(href="/")
-    = image_tag ""
   ul
     li.yellow-border.sm = link_to "EVENT", "#event"
+    li ｜
     li.yellow-border.sm = link_to "DJ", "#dj"
+    li ｜
     li.yellow-border.sm = link_to "TIME TABLE", "#time_table"
+    li ｜
     li.yellow-border.sm = link_to "ACCESS", "#access"
 
 .hero
@@ -73,11 +74,13 @@ a(name="access")
     .map
       iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.401607413774!2d139.71482921860746!3d35.706566315441385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2sjp!4v1493725017887" width="960" height="320" frameborder="0" style="border:0" allowfullscreen)
 
-footer
-  .logo KOSENDJBU
-  ul
-    li = link_to "EVENT", "#event"
-    li = link_to "DJ", "#dj"
-    li = link_to "TIME TABLE", "#time_table"
-    li = link_to "ACCESS", "#access"
-  ul.right
+  .footer
+    ul
+      li = link_to "EVENT", "#event"
+      li ｜
+      li = link_to "DJ", "#dj"
+      li ｜
+      li = link_to "TIME TABLE", "#time_table"
+      li ｜
+      li = link_to "ACCESS", "#access"
+    ul.right

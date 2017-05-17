@@ -11,10 +11,12 @@ header {
   z-index: 1;
 
   ul {
+    margin-top: 22px;
+
     li {
       float: left;
       list-style: none;
-      margin-left: 10px;
+      margin-left: 20px;
       font-size: 1.5rem;
 
       a {
@@ -24,16 +26,20 @@ header {
   }
 }
 
-footer {
+.footer {
+  background-color: $dark_blue;
+  color: #fff;
+  height: 50px;
+
   ul {
     li {
       float: left;
       list-style: none;
-      margin-left: 10px;
+      margin-left: 20px;
       font-size: 1.5rem;
 
       a {
-        color: #000;
+        color: #fff;
       }
     }
   }
