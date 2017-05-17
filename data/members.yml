@@ -1,7 +1,6 @@
 -
   name: asonas
-  icon: "members/asonas.png"
-  circle_icon: "members/asonas_circle.png"
+  icon: "members/asonas.jpg"
   description: 頭に猫を乗っけていないと体のバランスが取れないです
   activities:
     -
@@ -15,8 +14,7 @@
       url: http://twitter.com/asonas
 -
   name: rooandqoo
-  icon: "members/rooandqoo.png"
-  circle_icon: "members/rooandqoo_circle.png"
+  icon: "members/rooandqoo.jpg"
   description: 双子の娘の父業をしつつ、会社勤めをしています。烏龍茶とトランスが燃料です
   activities:
     -
@@ -36,8 +34,7 @@
       url: http://rooandqoo.tumblr.com/
 -
   name: jigsaw
-  icon: "members/jigsaw.png"
-  circle_icon: "members/jigsaw_circle.png"
+  icon: "members/jigsaw.jpg"
   description: 朝目が覚めたら Funk/Soul のミックスを聞きながら支度をして、出社したら EDM を聞きながらコードを書いて、帰宅したら Classical を聞きながら本を読む生活をしています。
   activities:
     -
@@ -54,8 +51,7 @@
       url: http://last.fm/user/neo6120
 -
   name: mactkg
-  icon: "members/mactkg.png"
-  circle_icon: "members/mactkg_circle.png"
+  icon: "members/mactkg.jpg"
   description: feature-funkって知ってる?!
   activities:
     -
@@ -75,8 +71,7 @@
       url: http://last.fm/user/haraboo
 -
   name: maccha
-  icon: "members/maccha.png"
-  circle_icon: "members/maccha_circle.png"
+  icon: "members/maccha.jpg"
   description: 最近はエオルゼアに引き篭もってばかり。初DJで緊張している。
   activities:
     -
@@ -90,8 +85,7 @@
       url: http://twitter.com/maccha
 -
   name: toihrk
-  icon: "members/toihrk.png"
-  circle_icon: "members/toihrk_circle.png"
+  icon: "members/toihrk.jpg"
   description: 最近はダーツにハマってます。
   activities:
     -
@@ -105,8 +99,7 @@
       url: http://twitter.com/toihrk
 -
   name: y_taq
-  icon: "members/y_taq.png"
-  circle_icon: "members/y_taq_circle.png"
+  icon: "members/y_taq.jpg"
   description: 栃木県のハードコア初心者DJ。
   activities:
     -
@@ -120,8 +113,7 @@
       url: http://mixcloud.com/ytaq
 -
   name: XEN
-  icon: "members/xen.png"
-  circle_icon: "members/xen_circle.png"
+  icon: "members/xen.jpg"
   description: 曲作る人なのでDJとかわかんないです＞＜
   activities:
     -
@@ -135,8 +127,7 @@
       url: http://soundcloud.com/suu712
 -
   name: 八嶋
-  icon: "members/yashima.png"
-  circle_icon: "members/yashima_circle.png"
+  icon: "members/yashima.jpg"
   description: 初DJ。普段は曲を作っています。DRUM'N'BASSを中心に色々とかけていきます。
   activities:
     -
@@ -153,8 +144,7 @@
       url: http://8to7.bandcamp.com/
 -
   name: 便座チープネス
-  icon: "members/frkout.png"
-  circle_icon: "members/frkout_circle.png"
+  icon: "members/frkout.jpg"
   description: "jazz/hadoop/funk/ビッグデータ/soul"
   activities:
     -
@@ -165,8 +155,7 @@
       url: http://twitter.com/frkout
 -
   name: sorah
-  icon: "members/sorah.png"
-  circle_icon: "members/sorah_circle.png"
+  icon: "members/sorah.jpg"
   description: |-
     <p>a.k.a. そらは</p>
     <p>普段は<a href="https://www.google.com/search?q=%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC">アイドルプロデュース</a>しながら、副業でコードを書く仕事をしています。</p>
@@ -183,8 +172,7 @@
       url: https://soundcloud.com/soraher
 -
   name: unasuke
-  icon: "members/unasuke.png"
-  circle_icon: "members/unasuke_circle.png"
+  icon: "members/unasuke.jpg"
   description: ブースで飛び跳ねる
   activities:
     -
@@ -201,8 +189,7 @@
       url: https://www.mixcloud.com/yu_suke1994
 -
   name: HolyGrail
-  icon: "members/holygrail.png"
-  circle_icon: "members/holygrail_circle.png"
+  icon: "members/holygrail.jpg"
   description: 俺がiTunesだ！本当のGeniusってやつを魅せてやるぜ！
   activities:
     -
@@ -219,8 +206,7 @@
       url: https://soundcloud.com/holygrail81
 -
   name: Takayuki&nbsp;Tominaga
-  icon: "members/tominaga.png"
-  circle_icon: "members/tominaga_circle.png"
+  icon: "members/tominaga.jpg"
   description: a.k.a. とーかさん<br>ジャンル名にHardがついている曲は大体好きな傾向があります。
   activities:
     -
