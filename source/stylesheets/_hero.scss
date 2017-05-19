@@ -8,9 +8,17 @@
   overflow: hidden;
   position: relative;
 
+  .logo {
+    margin-top: 100px;
+
+    img {
+      width: 500px;
+    }
+  }
+
   h1.caption {
-    padding-top: 625px;
     font-size: 1.5rem;
+    font-weight: normal;
     color: #fff;
   }
 }
@@ -19,8 +27,10 @@
   .hero {
     min-height: 480px;
 
-    h1.caption {
-      padding-top: 350px;
+    .logo {
+      img {
+        width: 300px;
+      }
     }
   }
 }
