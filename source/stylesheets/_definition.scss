@@ -11,6 +11,11 @@ html {
     font-size: 14px;
   }
 }
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
 h1 {
   font-size: 1rem;
 }
@@ -22,6 +27,8 @@ h2 {
 h2.ex-header {
   padding: 80px 0 50px;
   font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 h2.ex-header.event {
