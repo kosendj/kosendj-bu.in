@@ -61,6 +61,19 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer {
+    ul {
+      padding-left: 0px;
+
+      li {
+        font-size: 1.4rem;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
 .event {
   padding-bottom: 60px;
 
@@ -146,7 +159,7 @@ header {
       float: left;
     }
     .right {
-      margin-left: 120px;
+      margin-left: 100px;
 
       .profile {
         padding-top: 10px;
@@ -194,15 +207,19 @@ header {
   margin: 0 auto;
 
   p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 50px;
   }
 
   table {
     tr {
-      td.dj,
-      td.time.text-center {
-        padding: 15px 10px;
+      td.time {
+        padding: 19px 10px;
+      }
+
+      td.dj {
+        padding: 18px 10px;
+        font-size: 1.5rem;
       }
     }
 

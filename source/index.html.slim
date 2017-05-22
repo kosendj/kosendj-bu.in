@@ -45,7 +45,7 @@ a(name="dj")
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
-  p.text-center 2017.06.17 (Sat.) 14:00-20:00 @sabaco
+  p.text-center.sub-caption 2017.06.17 (Sat.) 14:00-20:00 @sabaco
   .time-table
     table.table
       - data.timetable.each do |tt|
@@ -84,3 +84,4 @@ a(name="access")
       li ｜
       li = link_to "ACCESS", "#access"
     ul.right
+      = image_tag ""
