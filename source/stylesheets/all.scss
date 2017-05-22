@@ -70,7 +70,7 @@ header {
   }
 
   .venue {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
   }
 
@@ -225,8 +225,18 @@ header {
 
 .venues {
   .hako {
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .address {
+    margin-bottom: 3px;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  .url {
     margin-bottom: 30px;
   }
+
   .map {
     padding-bottom: 100px;
   }
