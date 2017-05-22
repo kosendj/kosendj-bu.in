@@ -1,5 +1,6 @@
 $blue: #01b4ff;
 $yellow: #cfff27;
+$dark_yellow: #688e27;
 $dark_blue: #001c27;
 $border_line: #334952;
 
@@ -40,8 +41,24 @@ h2.ex-header.time-table {
 h2.ex-header.access {
   padding: 70px 0 50px;
 }
+
 .text-yellow {
   color: $yellow;
+}
+
+.text-dark-yellow {
+  color: $dark_yellow;
+}
+.new-window {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 3px;
+    margin-left: 6px;
+
+    width: 10px;
+  }
 }
 
 .yellow-border {
