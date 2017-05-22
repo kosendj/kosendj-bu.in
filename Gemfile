@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~>4.1"
 gem "middleman-deploy", github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem 'middleman-autoprefixer'
+gem 'middleman-sprockets'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.4"
