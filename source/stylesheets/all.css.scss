@@ -45,7 +45,7 @@ header {
 .footer {
   background-color: $dark_blue;
   color: #fff;
-  height: 50px;
+  height: 70px;
 
   ul {
     li {
@@ -53,11 +53,41 @@ header {
       list-style: none;
       margin-left: 20px;
       font-size: 1.5rem;
+      vertical-align: middle;
+      line-height: 65px;
 
       a {
         color: #fff;
       }
     }
+  }
+
+  .right {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .twitter-btn, .suzuri-btn {
+    width: 182px;
+    height: 50px;
+    display: inline-block;
+  }
+
+  .suzuri-btn {
+    background-image: image-url("suzuri.png");
+    background-size: 182px 50px;
+    margin-right: 4px;
+  }
+  .suzuri-btn:hover {
+    background-image: image-url("suzuri_hover.png");
+  }
+
+  .twitter-btn {
+    background-image: image-url("twitter.png");
+    background-size: 182px 50px;
+  }
+  .twitter-btn:hover {
+    background-image: image-url("twitter_hover.png");
   }
 }
 
