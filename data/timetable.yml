@@ -1,21 +1,31 @@
 ---
 - time: '14:00'
-  dj: 'maru : Various'
+  screen_name: maru
+  genre: Various
 - time: '14:30'
-  dj: 'jgs : POPS'
+  screen_name: jgs
+  genre: POPS
 - time: '15:00'
-  dj: '8 to 7 : DRUM''N''BASS'
+  screen_name: 8 to 7
+  genre: DRUM'N'BASS
 - time: '15:30'
-  dj: 'asonas : kawaii_girl 2nd'
+  screen_name: asonas
+  genre: kawaii_girl 2nd
 - time: '16:00'
-  dj: 'furaji : Anime / Game / 同人'
+  screen_name: furaji
+  genre: Anime / Game / 同人
 - time: '16:40'
-  dj: 'maenox : 00年代アニソンで倒す'
+  screen_name: maenox
+  genre: 00年代アニソンで倒す
 - time: '17:20'
-  dj: 'HolyGrail : DENSHI ONGAKU'
+  screen_name: HolyGrail
+  genre: DENSHI ONGAKU
 - time: '18:00'
-  dj: 'かめりあ : Entertainment'
+  screen_name: かめりあ
+  genre: Entertainment
 - time: '18:40'
-  dj: 'mactkg : Nu discoとか、何か... 未定です。'
+  screen_name: mactkg
+  genre: Nu discoとか、何か... 未定です。
 - time: '19:20'
-  dj: 'rooandqoo : Dance & EDM'
+  screen_name: rooandqoo
+  genre: Dance & EDM
