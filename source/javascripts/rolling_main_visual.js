@@ -5,6 +5,5 @@ $(function(){
     directory = "sp"
   }
   var url = 'images/' + directory + '/mv' + index + '.jpg';
-  console.log(url)
   document.querySelector(".hero").style.cssText = "background-image: url("+ url +")";
 })
