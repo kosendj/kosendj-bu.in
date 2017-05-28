@@ -107,7 +107,7 @@ footer {
 
     .footer-logo {
       display: block;
-      margin: 0 auto;
+      margin: 35px auto 0;
     }
 
     .footer-menu {
@@ -121,10 +121,11 @@ footer {
         left: 50%;
 
         li {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           margin-left: 5px;
           position: relative;
           left: -50%;
+          line-height: 35px;
 
           a {
             color: #000;
