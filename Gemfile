@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>4.1"
-gem "middleman-deploy", github: 'middleman-contrib/middleman-deploy', branch: 'master'
+gem "middleman-deploy", git: 'https://github.com/middleman-contrib/middleman-deploy.git', branch: 'master'
 gem 'middleman-autoprefixer'
 gem 'middleman-sprockets'
 
@@ -11,3 +11,4 @@ gem 'middleman-sprockets'
 gem "middleman-livereload", "~> 3.4"
 
 gem "slim"
+gem 'therubyracer'
