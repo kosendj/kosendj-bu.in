@@ -1,28 +1,31 @@
 ---
 - time: '14:00'
+  screen_name: unasuke
+  genre: Big roomで遊ぼう！(全年齢)
+- time: '14:35'
   screen_name: maru
-  genre: Various
-- time: '14:40'
-  screen_name: 8 to 7
-  genre: DRUM'N'BASS
-- time: '15:20'
-  screen_name: asonas
-  genre: kawaii_girl 2nd
-- time: '16:00'
-  screen_name: furaji
-  genre: Anime / Game / 同人
-- time: '16:40'
-  screen_name: maenox
-  genre: 00年代アニソンで倒す
-- time: '17:20'
+  genre: Jersey club, Future bass
+- time: '15:10'
+  screen_name: "∇Ⅎuя∀j†∇"
+  genre: 闇†chillout
+- time: '15:45'
+  screen_name: dachiba
+  genre: 和モノハウス（の予定）
+- time: '16:20'
+  screen_name: sorah
+  genre: anime
+- time: '16:55'
   screen_name: HolyGrail
-  genre: DENSHI ONGAKU
-- time: '18:00'
-  screen_name: かめりあ
-  genre: Entertainment
-- time: '18:40'
+  genre: おまたせジーニアス
+- time: '17:30'
   screen_name: mactkg
-  genre: Nu discoとか、何か... 未定です。
+  genre: サマー
+- time: '18:05'
+  screen_name: 8 to 7
+  genre: 手打ちアーメンLive
+- time: '18:40'
+  screen_name: くろりあ
+  genre: ドラムン、エレクトロハウス、音ゲー
 - time: '19:20'
-  screen_name: rooandqoo
-  genre: Dance & EDM
+  screen_name: y.taq
+  genre: 久しぶりハードコア
