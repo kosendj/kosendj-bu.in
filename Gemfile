@@ -11,3 +11,4 @@ gem 'middleman-sprockets'
 gem "middleman-livereload", "~> 3.4"
 
 gem "slim"
+gem 'therubyracer'
