@@ -156,10 +156,7 @@
 -
   name: sorah
   icon: "members/sorah.jpg"
-  description: |-
-    <p>a.k.a. そらは</p>
-    <p>普段は<a href="https://www.google.com/search?q=%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC">アイドルプロデュース</a>しながら、副業でコードを書く仕事をしています。</p>
-    <p>だいたい基本原曲のアニソン DJ だと思ってくれてればいいです。アイマスも流すよ。あと、VJ 活動もしているよ。</p>
+  description: よくわからないままアイドルプロデュースをしています。
   activities:
     -
       embed:
@@ -168,8 +165,8 @@
       name: twitter
       url: https://twitter.com/sora_h
     -
-      name: soundcloud
-      url: https://soundcloud.com/soraher
+      name: mixcloud
+      url: https://www.mixcloud.com/soraher
 -
   name: unasuke
   icon: "members/unasuke.jpg"
