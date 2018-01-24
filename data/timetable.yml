@@ -1,22 +1,28 @@
 ---
 - time: '14:00'
   screen_name: asonas
-  genre: "/Future(.*)/i"
-- time: '14:50'
-  screen_name: るーくととーか
-  genre: Trance, Progressive House
-- time: '15:50'
-  screen_name: furaji
-  genre: drum'n'bass
-- time: '16:40'
+  genre: POP
+- time: '14:40'
+  screen_name: sorah
+  genre: anime
+- time: '15:20'
   screen_name: 61
-  genre: 異国風Bigroom
-- time: '17:30'
-  screen_name: うなすけ
-  genre: EDM(脱チャラ)
-- time: '18:20'
+  genre: TM NETWORK
+- time: '16:00'
+  screen_name: Ba.Eria
+  genre: funkot
+- time: '16:40'
   screen_name: maru
-  genre: Various
-- time: '19:10'
-  screen_name: 8 to 7
-  genre: VAPORWAVE
+  genre: FUTURE BASS
+- time: '17:20'
+  screen_name: ふとし
+  genre: ハコクラ
+- time: '18:00'
+  screen_name: HolyGrail
+  genre: K-POP
+- time: '18:40'
+  screen_name: Kitasenju House Mafia
+  genre: House
+- time: '19:20'
+  screen_name: うなすけ
+  genre: EDM

@@ -47,7 +47,17 @@ a(name="time_table")
   h2.ex-header.text-center.time-table TIME TABLE
   p.text-center.sub-caption 2018.02.17 (Sat.) 14:00-20:00 @sabaco
   .time-table
-    strong soon...
+    table.table
+      - data.timetable.each do |tt|
+        tr
+          td.time.text-center
+            = tt.time
+          td.dj
+            strong = tt.screen_name
+            small
+              | &nbsp;:&nbsp;
+              = tt.genre
+
 a(name="access")
 .black-container.venues
   h2.ex-header.text-center.access ACCESS
