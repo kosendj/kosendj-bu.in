@@ -21,7 +21,7 @@ header
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
-    span.yellow-border.md 2018.02.17(Sat.) 14:00 - 20:00
+    span.yellow-border.md 2018.04.21(Sat.) 14:00 - 20:00
   .text-center.venue @sabaco (¥2,000/1drink)
   a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
@@ -45,18 +45,9 @@ a(name="dj")
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
-  p.text-center.sub-caption 2018.02.17 (Sat.) 14:00-20:00 @sabaco
-  .time-table
-    table.table
-      - data.timetable.each do |tt|
-        tr
-          td.time.text-center
-            = tt.time
-          td.dj
-            strong = tt.screen_name
-            small
-              | &nbsp;:&nbsp;
-              = tt.genre
+  p.text-center.sub-caption 2018.04.21 (Sat.) 14:00-20:00 @sabaco
+  .time-table.text-center
+    strong soon...
 
 a(name="access")
 .black-container.venues
