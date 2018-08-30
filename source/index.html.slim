@@ -21,16 +21,8 @@ header
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
-    span.yellow-border.md 2018.07.16(Mon.) 14:00 - 20:00
+    span.yellow-border.md 2018.09.29(Sat.) 14:00 - 20:00
   .text-center.venue @sabaco (¥2,000/1drink)
-  h3.text-center Discount
-  p.text-center(style="font-size: 1.2em;")
-    span.yellow-border.sm
-      | 学生 &yen; 0 (学生証をご提示ください)
-    br
-    span.yellow-border.sm
-      a(href='https://kosenconf.tokyo/') 高専カンファレンスin Tokyo 2018
-      | &nbsp;参加者 &yen; 1,000 (名札をご提示ください)
   a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
@@ -53,8 +45,9 @@ a(name="dj")
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
-  p.text-center.sub-caption 2018.07.16 (Mon.) 14:00-20:00 @sabaco
+  p.text-center.sub-caption 2018.09.29 (Sat.) 14:00-20:00 @sabaco
   .time-table
+    h3.text-center DJ
     table.table
       - data.timetable.each do |tt|
         tr
@@ -65,6 +58,12 @@ a(name="time_table")
             small
               | &nbsp;:&nbsp;
               = tt.genre
+    h3.text-center VJ
+    p.text-center
+      span: strong nora2r
+      span
+        | ,&nbsp;
+      span: strong Takayuki Tominaga
 
 a(name="access")
 .black-container.venues
