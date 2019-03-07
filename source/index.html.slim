@@ -20,6 +20,7 @@ header
 
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
+  h3.text-center kosendj × IMAP++
   p.datetime.text-center
     span.yellow-border.md 2019.03.30(Sat.) 14:00 - 20:00
   .text-center.venue @sabaco (¥2,000/1drink)
@@ -47,10 +48,9 @@ a(name="time_table")
   h2.ex-header.text-center.time-table TIME TABLE
   p.text-center.sub-caption 2019.03.30 (Sat.) 14:00-20:00 @sabaco
   .time-table
-    h3.text-center kosendj x imap++
-    p.strong.text-center comming soon...
+    h3.text-center kosendj × IMAP++
     /h3.text-center DJ
-    /table.table
+    table.table
       - data.timetable.each do |tt|
         tr
           td.time.text-center
@@ -60,6 +60,8 @@ a(name="time_table")
             small
               | &nbsp;:&nbsp;
               = tt.genre
+  p.text-center
+    a(href='https://imappp.club/') Website of the IMAP++
 
 a(name="access")
 .black-container.venues
