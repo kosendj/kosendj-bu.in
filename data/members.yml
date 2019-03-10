@@ -233,3 +233,14 @@
     -
       name: soundcloud
       url: https://soundcloud.com/furaji
+-
+  name: nAo
+  icon: "members/nao.jpg"
+  description: 好きなBPMは128です。週6で飲酒をしています。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: https://twitter.com/nao0
