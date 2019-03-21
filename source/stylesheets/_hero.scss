@@ -9,10 +9,13 @@
   position: relative;
 
   .logo {
+    max-width: 900px;
     margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
-      width: 900px;
+      width: 100%;
     }
   }
 
@@ -27,24 +30,12 @@
 @media screen and (max-width:480px) {
   .hero {
     min-height: 480px;
-
-    .logo {
-      img {
-        width: 300px;
-      }
-    }
   }
 }
 
 @media screen and (max-width:768px) {
   .hero {
     min-height: 530px;
-
-    .logo {
-      img {
-        width: 710px;
-      }
-    }
   }
 }
 
