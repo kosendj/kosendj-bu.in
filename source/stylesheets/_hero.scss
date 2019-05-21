@@ -1,6 +1,6 @@
 .hero {
   min-height: 750px;
-  background-image: image-url("images/main-image.png");
+  background-image: image-url("images/pc/mv1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,13 +9,10 @@
   position: relative;
 
   .logo {
-    max-width: 900px;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
 
     img {
-      width: 100%;
+      width: 500px;
     }
   }
 
@@ -30,12 +27,12 @@
 @media screen and (max-width:480px) {
   .hero {
     min-height: 480px;
-  }
-}
 
-@media screen and (max-width:768px) {
-  .hero {
-    min-height: 530px;
+    .logo {
+      img {
+        width: 300px;
+      }
+    }
   }
 }
 
@@ -44,11 +41,11 @@ $blur_size: 8px;
 .hero:before{
   content: '';
   background: inherit;
-  // filter: blur($blur_size);
+  filter: blur($blur_size);
   position: absolute;
-  // top:    -$blur_size;
-  // left:   -$blur_size;
-  // right:  -$blur_size;
-  // bottom: -$blur_size;
+  top:    -$blur_size;
+  left:   -$blur_size;
+  right:  -$blur_size;
+  bottom: -$blur_size;
   z-index: -1;
 }
