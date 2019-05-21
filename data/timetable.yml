@@ -1,27 +1,21 @@
 - time: '14:00'
-  screen_name: unasuke
-  genre: Bigroom as Bootstrap
-- time: '14:40'
-  screen_name: minekouki
-  genre: Techno / Deep House / Virtual
-- time: '15:20'
-  screen_name: HolyGrail
-  genre: 'バーチャルとLDH'
-- time: '16:00'
-  screen_name: polamjag
-  genre: 'Dance & House'
-- time: '16:40'
-  screen_name: Takayuki Tominaga
-  genre: OTAKU SAMPLING
+  screen_name: dachiba
+  genre: House
+- time: '14:50'
+  screen_name: mactkg
+  genre: House and Techno
+- time: '15:40'
+  screen_name: SpicyCoffee
+  genre: rock/dance/anime
+- time: '16:30'
+  screen_name: shanonim
+  genre: JRock/Anime
 - time: '17:20'
-  screen_name: sorah
-  genre: anime
-- time: '18:00'
-  screen_name: 'masawada'
-  genre: misc
-- time: '18:40'
-  screen_name: nAo
-  genre: '日本語の良い曲'
-- time: '19:20'
-  screen_name: stefafafan
-  genre: Heisei
+  screen_name: frkout
+  genre: 'TBA'
+- time: '18:10'
+  screen_name: Hatoto
+  genre: Nerdcore
+- time: '19:10'
+  screen_name: HolyGrail
+  genre: TBA
