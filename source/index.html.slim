@@ -14,13 +14,12 @@ header
 .hero
   .container
     .logo.text-center
-      = image_tag "kosen-djvsimappp.png", alt: "高専DJ部"
+      = image_tag "logo.png", alt: "高専DJ部"
     h1.caption.text-center
       | 「高専DJ部」は高専生やそのOB/OGが集まってDJをやる部活動です。
 
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
-  h3.text-center kosendj × IMAP++
   p.datetime.text-center
     span.yellow-border.md 2019.03.30(Sat.) 14:00 - 20:00
   .text-center.venue @sabaco (¥2,000/1drink)
@@ -48,8 +47,7 @@ a(name="time_table")
   h2.ex-header.text-center.time-table TIME TABLE
   p.text-center.sub-caption 2019.03.30 (Sat.) 14:00-20:00 @sabaco
   .time-table
-    h3.text-center kosendj × IMAP++
-    /h3.text-center DJ
+    h3.text-center DJ
     table.table
       - data.timetable.each do |tt|
         tr
@@ -60,8 +58,6 @@ a(name="time_table")
             small
               | &nbsp;:&nbsp;
               = tt.genre
-  p.text-center
-    a(href='https://imappp.club/') Website of the IMAP++
 
 a(name="access")
 .black-container.venues
