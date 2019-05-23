@@ -2,14 +2,14 @@
   screen_name: dachiba
   genre: House
 - time: '14:50'
-  screen_name: mactkg
-  genre: House and Techno
-- time: '15:40'
   screen_name: SpicyCoffee
   genre: rock/dance/anime
-- time: '16:30'
+- time: '15:40'
   screen_name: shanonim
   genre: JRock/Anime
+- time: '16:30'
+  screen_name: mactkg
+  genre: House and Techno
 - time: '17:20'
   screen_name: frkout
   genre: 'TBA'
