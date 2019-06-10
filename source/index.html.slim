@@ -5,9 +5,9 @@ header
   ul
     li.yellow-border.sm = link_to "EVENT", "#event"
     li ｜
-    li.yellow-border.sm = link_to "DJ", "#dj"
-    li ｜
     li.yellow-border.sm = link_to "TIME TABLE", "#time_table"
+    li ｜
+    li.yellow-border.sm = link_to "MEMBER", "#member"
     li ｜
     li.yellow-border.sm = link_to "ACCESS", "#access"
 
@@ -26,9 +26,9 @@ header
   a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
-a(name="dj")
+a(name="member")
 .black-container
-  h2.ex-header.text-center DJ
+  h2.ex-header.text-center MEMBER
   .members
     - data.members.each do |member|
       .member
