@@ -26,22 +26,6 @@ header
   a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
-a(name="member")
-.black-container
-  h2.ex-header.text-center MEMBER
-  .members
-    - data.members.each do |member|
-      .member
-        .border
-          .left
-            .icon
-              = image_tag(member.icon, width: "80px")
-          .right
-            strong
-              span.name = member.name
-              = link_to image_tag("new_window.png"), member.services&.first.url, class: "new-window"
-            .profile = member.description
-
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
@@ -64,6 +48,22 @@ a(name="time_table")
       span
         | ,&nbsp;
       span: strong Takayuki Tominaga
+
+a(name="member")
+.black-container
+  h2.ex-header.text-center MEMBER
+  .members
+    - data.members.each do |member|
+      .member
+        .border
+          .left
+            .icon
+              = image_tag(member.icon, width: "80px")
+          .right
+            strong
+              span.name = member.name
+              = link_to image_tag("new_window.png"), member.services&.first.url, class: "new-window"
+            .profile = member.description
 
 a(name="access")
 .black-container.venues
