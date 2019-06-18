@@ -244,3 +244,17 @@
     -
       name: twitter
       url: https://twitter.com/nao0
+-
+  name: SpicyCoffee
+  icon: "members/SpicyCoffee.jpg"
+  description: 学生時代 CD ショップの試聴で休日を潰していたタイプ。
+  activities:
+    -
+      embed:
+  services:
+    -
+      name: twitter
+      url: https://twitter.com/SpicyCoffee66
+    -
+      name: mixcloud
+      url: https://www.mixcloud.com/SpicyCoffee66/
