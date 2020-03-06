@@ -81,3 +81,30 @@ h2.ex-header.access {
 .yellow-border.sm:before {
   height: 6px;
 }
+
+.important-notice {
+  // from bootstrap
+  margin: auto;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  max-width: 80%;
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
