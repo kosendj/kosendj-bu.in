@@ -1,0 +1,1 @@
+$(function(){var e=Math.floor(6*Math.random()),o="pc";window.navigator.userAgent.toLowerCase().match(/(iphone|android)/i)&&(o="sp");var a="images/"+o+"/mv"+e+".jpg";document.querySelector(".hero").style.cssText="background-image: url("+a+")"});
