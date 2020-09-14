@@ -1,1 +1,352 @@
-html{font-size:16px}@media screen and (max-width: 480px){html{font-size:14px}}body{font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif}h1{font-size:1rem}h2{font-size:2.5rem}h2.ex-header{padding:80px 0 50px;font-size:4rem;font-family:'Montserrat', sans-serif;font-weight:bold;margin-top:0px}h2.ex-header.event{padding:50px 0 30px}h2.ex-header.time-table{padding:70px 0 10px}h2.ex-header.access{padding:70px 0 50px}.text-yellow{color:#cfff27}.text-dark-yellow{color:#688e27}.new-window{position:relative}.new-window img{position:absolute;top:3px;margin-left:6px;width:10px}.yellow-border{position:relative}.yellow-border:before{position:absolute;bottom:0;width:100%;background-color:#cfff27;content:'';z-index:-1}.yellow-border.md:before{height:12px}.yellow-border.sm:before{height:6px}.important-notice{margin:auto;color:#721c24;background-color:#f8d7da;border-color:#f5c6cb;padding:10px 20px;border:1px solid transparent;border-radius:.25rem;max-width:80%}@media screen and (max-width: 480px){.important-notice{padding:10px;max-width:90%}}.important-notice h3{text-align:center;margin:10px 0 20px;font-size:20px}.important-notice p{font-size:16px}.hero{min-height:750px;background-image:url(/assets/images/pc/mv1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;z-index:0;overflow:hidden;position:relative}.hero .logo{margin-top:100px}.hero .logo img{width:500px}.hero h1.caption{font-size:1.5rem;font-weight:normal;line-height:23px;color:#fff}@media screen and (max-width: 480px){.hero{min-height:480px}.hero .logo img{width:300px}}.hero:before{content:'';background:inherit;-webkit-filter:blur(8px);filter:blur(8px);position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;z-index:-1}header{position:absolute;width:100%;background-color:#fff;opacity:0.9;height:70px;z-index:1}header ul{margin-top:22px}header ul li{float:left;list-style:none;margin-left:20px;font-size:1.5rem}header ul li a{color:#000}@media screen and (max-width: 480px){header{height:55px}header ul{margin-top:17px;padding-left:10px}header ul li{margin-left:7px;font-size:1.4rem}}footer{background-color:#001c27;color:#fff;height:70px;margin-top:-20px}footer .footer-logo{display:none}footer ul li{float:left;list-style:none;margin-left:20px;font-size:1.5rem;vertical-align:middle;line-height:65px}footer ul li a{color:#fff}footer .right{float:right;margin-right:20px}footer .twitter-btn,footer .suzuri-btn{width:182px;height:50px;display:inline-block;background-repeat:no-repeat}footer .suzuri-btn{background-image:url(/images/suzuri.png);background-size:182px 50px;margin-right:4px}footer .suzuri-btn:hover{background-image:url(/images/suzuri_hover.png)}footer .twitter-btn{background-image:url(/images/twitter.png);background-size:182px 50px}footer .twitter-btn:hover{background-image:url(/images/twitter_hover.png)}@media screen and (max-width: 480px){footer{background-color:#fff;color:#000;margin:0 10px;height:auto;margin-top:auto}footer .footer-logo{display:block;margin:35px auto 0}footer .footer-menu{position:relative;overflow:hidden}footer .footer-menu ul{padding-left:0px;position:relative;float:left;left:50%}footer .footer-menu ul li{font-size:1.3rem;margin-left:5px;position:relative;left:-50%;line-height:35px}footer .footer-menu ul li a{color:#000}footer .right{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;width:100%;margin:0;margin-bottom:30px}footer .right .twitter-btn,footer .right .suzuri-btn{float:left;width:143px;height:40px;background-size:143px 40px;margin:0}}.event{padding-bottom:60px}.event .datetime{font-size:2.5rem;margin-bottom:5px}.event .venue{font-size:1.8rem;margin-bottom:30px}.event .sq-btn{display:block;background-color:#01b4ff;color:#fff;width:230px;min-height:50px;padding:10px;margin:0 auto;vertical-align:middle;line-height:30px;font-family:'Montserrat', sans-serif;letter-spacing:0.2rem}.event .sq-btn:hover{background-color:#fff;border:3px solid #01b4ff;min-height:44px;line-height:24px;color:#01b4ff;text-decoration:none}@media screen and (max-width: 480px){.event .datetime{font-size:2rem}}.black-container{background-color:#001c27;color:#fff}.members{width:80%;max-width:820px;margin:0 auto;padding-bottom:100px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-ms-flex-line-pack:start;align-content:flex-start;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.members .member{min-height:120px;padding-top:22px;padding-bottom:22px;margin:0px 0;border-top:1px solid #334952;width:386px;display:-webkit-box;display:-ms-flexbox;display:flex}.members .member .name{border-bottom:1px solid #688e27}.members .member .left{float:left}.members .member .right{margin-left:100px}.members .member .right .profile{padding-top:10px}.members .member:nth-last-child(2),.members .member:last-child{border-bottom:1px solid #334952}@media screen and (max-width: 945px){.members{width:90%;padding-bottom:50px}.members .member{padding-top:11px;padding-bottom:11px;min-height:100px;margin:0 auto}.members .member .left .icon img{width:65px}.members .member .right{margin-left:80px}.members .member .right .profile{padding-top:6px}}.time-table{width:50%;margin:0 auto}.time-table p{font-size:1.8rem;margin-bottom:50px}.time-table table tr td.time{padding:19px 10px}.time-table table tr td.dj{padding:18px 10px;font-size:1.5rem}.time-table table small{color:#888}@media screen and (max-width: 480px){.time-table{width:100%}.time-table p{font-size:1.5rem;margin-bottom:30px}}.venues .hako{margin-bottom:8px;font-size:1.7rem;font-weight:bold}.venues .address{margin-bottom:3px;font-family:"Hiragino Kaku Gothic ProN"}.venues .url{margin-bottom:30px}.venues .map{padding-bottom:100px}@media screen and (max-width: 480px){.venues{padding:0 15px}.venues div.text-center{text-align:left}.venues div.text-center p.address{margin-top:10px;margin-bottom:0}.venues div.text-center p.text-yellow.hako{margin-bottom:20px}.venues .map iframe{width:100%}}
+@charset "UTF-8";
+html {
+  font-size: 16px; }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px; } }
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; }
+
+h1 {
+  font-size: 1rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h2.ex-header {
+  padding: 80px 0 50px;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 0px; }
+
+h2.ex-header.event {
+  padding: 50px 0 30px; }
+
+h2.ex-header.time-table {
+  padding: 70px 0 10px; }
+
+h2.ex-header.access {
+  padding: 70px 0 50px; }
+
+.text-yellow {
+  color: #cfff27; }
+
+.text-dark-yellow {
+  color: #688e27; }
+
+.new-window {
+  position: relative; }
+  .new-window img {
+    position: absolute;
+    top: 3px;
+    margin-left: 6px;
+    width: 10px; }
+
+.yellow-border {
+  position: relative; }
+
+.yellow-border:before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #cfff27;
+  content: '';
+  z-index: -1; }
+
+.yellow-border.md:before {
+  height: 12px; }
+
+.yellow-border.sm:before {
+  height: 6px; }
+
+.important-notice {
+  margin: auto;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  max-width: 60%; }
+  @media screen and (max-width: 480px) {
+    .important-notice {
+      padding: 10px;
+      max-width: 90%; } }
+  .important-notice h3 {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 20px; }
+  .important-notice p {
+    font-size: 16px; }
+
+.hero {
+  min-height: 750px;
+  background-image: url("/images/pc/mv1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative; }
+  .hero .logo {
+    margin-top: 100px; }
+    .hero .logo img {
+      width: 500px; }
+  .hero h1.caption {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 23px;
+    color: #fff; }
+
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 480px; }
+    .hero .logo img {
+      width: 300px; } }
+
+.hero:before {
+  content: '';
+  background: inherit;
+  filter: blur(8px);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1; }
+
+header {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 70px;
+  z-index: 1; }
+  header ul {
+    margin-top: 22px; }
+    header ul li {
+      float: left;
+      list-style: none;
+      margin-left: 20px;
+      font-size: 1.5rem; }
+      header ul li a {
+        color: #000; }
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 55px; }
+    header ul {
+      margin-top: 17px;
+      padding-left: 10px; }
+      header ul li {
+        margin-left: 7px;
+        font-size: 1.4rem; } }
+
+footer {
+  background-color: #001c27;
+  color: #fff;
+  height: 70px;
+  margin-top: -20px; }
+  footer .footer-logo {
+    display: none; }
+  footer ul li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 65px; }
+    footer ul li a {
+      color: #fff; }
+  footer .right {
+    float: right;
+    margin-right: 20px; }
+  footer .twitter-btn, footer .suzuri-btn {
+    width: 182px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat; }
+  footer .suzuri-btn {
+    background-image: url("/images/suzuri.png");
+    background-size: 182px 50px;
+    margin-right: 4px; }
+  footer .suzuri-btn:hover {
+    background-image: url("/images/suzuri_hover.png"); }
+  footer .twitter-btn {
+    background-image: url("/images/twitter.png");
+    background-size: 182px 50px; }
+  footer .twitter-btn:hover {
+    background-image: url("/images/twitter_hover.png"); }
+
+@media screen and (max-width: 480px) {
+  footer {
+    background-color: #fff;
+    color: #000;
+    margin: 0 10px;
+    height: auto;
+    margin-top: auto; }
+    footer .footer-logo {
+      display: block;
+      margin: 35px auto 0; }
+    footer .footer-menu {
+      position: relative;
+      overflow: hidden; }
+      footer .footer-menu ul {
+        padding-left: 0px;
+        position: relative;
+        float: left;
+        left: 50%; }
+        footer .footer-menu ul li {
+          font-size: 1.3rem;
+          margin-left: 5px;
+          position: relative;
+          left: -50%;
+          line-height: 35px; }
+          footer .footer-menu ul li a {
+            color: #000; }
+    footer .right {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 30px; }
+      footer .right .twitter-btn, footer .right .suzuri-btn {
+        float: left;
+        width: 143px;
+        height: 40px;
+        background-size: 143px 40px;
+        margin: 0; } }
+
+.event {
+  padding-bottom: 60px; }
+  .event .datetime {
+    font-size: 2.5rem;
+    margin-bottom: 5px; }
+  .event .venue {
+    font-size: 1.8rem;
+    margin-bottom: 30px; }
+  .event .sq-btn {
+    display: block;
+    background-color: #01b4ff;
+    color: #fff;
+    width: 230px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem; }
+  .event .sq-btn:hover {
+    background-color: #fff;
+    border: 3px solid #01b4ff;
+    min-height: 44px;
+    line-height: 24px;
+    color: #01b4ff;
+    text-decoration: none; }
+
+@media screen and (max-width: 480px) {
+  .event .datetime {
+    font-size: 2rem; } }
+
+.black-container {
+  background-color: #001c27;
+  color: #fff; }
+
+.members {
+  width: 80%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between; }
+  .members .member {
+    min-height: 120px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin: 0px 0;
+    border-top: 1px solid #334952;
+    width: 386px;
+    display: flex; }
+    .members .member .name {
+      border-bottom: 1px solid #688e27; }
+    .members .member .left {
+      float: left; }
+    .members .member .right {
+      margin-left: 100px; }
+      .members .member .right .profile {
+        padding-top: 10px; }
+  .members .member:nth-last-child(2),
+  .members .member:last-child {
+    border-bottom: 1px solid #334952; }
+
+@media screen and (max-width: 945px) {
+  .members {
+    width: 90%;
+    padding-bottom: 50px; }
+    .members .member {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      min-height: 100px;
+      margin: 0 auto; }
+      .members .member .left .icon img {
+        width: 65px; }
+      .members .member .right {
+        margin-left: 80px; }
+        .members .member .right .profile {
+          padding-top: 6px; } }
+
+.time-table {
+  width: 50%;
+  margin: 0 auto; }
+  .time-table p {
+    font-size: 1.8rem;
+    margin-bottom: 50px; }
+  .time-table table tr td.time {
+    padding: 19px 10px; }
+  .time-table table tr td.dj {
+    padding: 18px 10px;
+    font-size: 1.5rem; }
+  .time-table table small {
+    color: #888; }
+
+@media screen and (max-width: 480px) {
+  .time-table {
+    width: 100%; }
+    .time-table p {
+      font-size: 1.5rem;
+      margin-bottom: 30px; } }
+
+.venues .hako {
+  margin-bottom: 8px;
+  font-size: 1.7rem;
+  font-weight: bold; }
+
+.venues .address {
+  margin-bottom: 3px;
+  font-family: "Hiragino Kaku Gothic ProN"; }
+
+.venues .url {
+  margin-bottom: 30px; }
+
+.venues .map {
+  padding-bottom: 100px; }
+
+@media screen and (max-width: 480px) {
+  .venues {
+    padding: 0 15px; }
+    .venues div.text-center {
+      text-align: left; }
+      .venues div.text-center p.address {
+        margin-top: 10px;
+        margin-bottom: 0; }
+      .venues div.text-center p.text-yellow.hako {
+        margin-bottom: 20px; }
+    .venues .map iframe {
+      width: 100%; } }
