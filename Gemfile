@@ -2,13 +2,9 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>4.1"
-gem "middleman-deploy", git: 'https://github.com/middleman-contrib/middleman-deploy.git', branch: 'master'
-gem 'middleman-autoprefixer'
-gem 'middleman-sprockets'
+gem "middleman", "~>4"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.4"
 
 gem "slim"
-gem 'therubyracer'
