@@ -21,23 +21,19 @@ header
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
-    span.yellow-border.md coming soon
+    span.yellow-border.md 2020.09.27 (Sun.) 14:00 - 20:00
   .text-center.venue @sabaco (¥2,000/1drink)
   a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
-section.important-notice#COVID-19
-  h3 高専DJ部 #26 延期のお知らせ
-  p
-    | 3月28日の高専DJ部は、諸般の事情により開催を延期することになりました。次回開催は4月以降を予定しております。
-  p 楽しみにされていた方には申し訳ありませんが、ご了承いただけますと幸いです。
 
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
-  p.text-center.sub-caption coming soon
-  /p.text-center.sub-caption 2020.03.28 (Sat.) 14:00-20:00 @sabaco
-  /.time-table
+  p.text-center.sub-caption 2020.09.27 (Sun.) 14:00-20:00 @sabaco (with Twitch)
+  .time-table
+  p.text-center.sub-caption coming soon...
+  /
     h3.text-center DJ
     table.table
       - data.timetable.each do |tt|
