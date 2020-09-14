@@ -22,10 +22,19 @@ header
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
     span.yellow-border.md 2020.09.27 (Sun.) 14:00 - 20:00
-  .text-center.venue @sabaco (¥2,000/1drink)
-  a.sq-btn.sq-btn-blue.text-center(href="#access")
+  .text-center.venue
+    = link_to "https://www.twitch.tv/sabaco_waseda" do
+      | https://www.twitch.tv/sabaco_waseda
+  /a.sq-btn.sq-btn-blue.text-center(href="#access")
     | ACCESS
 
+section.important-notice
+  h3 9月27日に開催される高専DJ部 #26 について
+  p.text-center
+    | 9月27日開催予定の高専DJ部は、新型コロナウイルス感染症予防のため、Twitchでの配信のみの開催とさせていただきます。
+  p.text-center
+    = link_to "https://www.twitch.tv/sabaco_waseda"
+      | https://www.twitch.tv/sabaco_waseda
 
 a(name="time_table")
 .container.time-table
