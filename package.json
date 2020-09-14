@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "watch": "sass --watch source/stylesheets/all.css.scss .tmp/all.css",
+    "build": "sass source/stylesheets/all.css.scss .tmp/all.css"
+  },
   "devDependencies": {
     "sass": "^1.26.10"
   }
