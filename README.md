@@ -1,4 +1,4 @@
-# http://kosendj-bu.in/
+# https://kosendj-bu.in/
 
 ## setup
 
