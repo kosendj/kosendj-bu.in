@@ -21,7 +21,7 @@ header
 .container.event(name="event")
   h2.ex-header.text-center.event EVENT
   p.datetime.text-center
-    span.yellow-border.md 2020.12.26 (Sat.) 14:00 - 20:00
+    span.yellow-border.md= data.event.date
   /.text-center.venue
   a.sq-btn.sq-btn-blue.text-center(href="https://www.twitch.tv/sabaco_waseda")
       | Twitch
@@ -40,11 +40,12 @@ section.important-notice
 a(name="time_table")
 .container.time-table
   h2.ex-header.text-center.time-table TIME TABLE
-  p.text-center.sub-caption 2020.12.26 (Sat.) 14:00-20:00 @sabaco (Twitch)
+  p.text-center.sub-caption
+    | #{data.event.date} @sabaco (Twitch)
   .time-table
     h3.text-center DJ
     table.table
-      - data.timetable.each do |tt|
+      - data.event.timetable.each do |tt|
         tr
           td.time.text-center
             = tt.time
