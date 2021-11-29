@@ -1,20 +1,20 @@
-date: '2021.09.25 (Sat.) 14:00-20:00'
+date: '2021.12.25 (Sat.) 14:00-20:00'
 timetable:
   - time: "14:00"
-    screen_name: nAo
-    genre: techno
-  - time: "14:30"
-    screen_name: Takayuki Tominaga
-    genre: たのしい
-  - time: "15:30"
-    screen_name: furaji
-    genre: Dubstep / Future Riddim
-  - time: "16:40"
-    screen_name: うなすけ
-    genre: Hardcore
-  - time: "17:50"
+    screen_name: dachiba
+    genre: ハウス
+  - time: "15:00"
     screen_name: はるかぜ
-    genre: たのしい(otaku funkot)
-  - time: "18:50"
+    genre: ハウスとかテクノとかその辺
+  - time: "16:00"
+    screen_name: うなすけ
+    genre: Progressive House to Hardcore
+  - time: "17:00"
+    screen_name: 肉
+    genre: 気持ちいいダンスミュージック
+  - time: "18:00"
+    screen_name: furaji
+    genre: ベースミュージック
+  - time: "19:00"
     screen_name: HolyGrail
-    genre: エモいRock
+    genre: クリスマスパーティー
