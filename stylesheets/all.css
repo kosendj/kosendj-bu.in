@@ -62,7 +62,8 @@ h2.ex-header.access {
 .yellow-border.sm:before {
   height: 6px; }
 
-.important-notice {
+.important-notice,
+.warn-notice {
   margin: auto;
   color: #721c24;
   background-color: #f8d7da;
@@ -72,15 +73,23 @@ h2.ex-header.access {
   border-radius: .25rem;
   max-width: 60%; }
   @media screen and (max-width: 480px) {
-    .important-notice {
+    .important-notice,
+    .warn-notice {
       padding: 10px;
       max-width: 90%; } }
-  .important-notice h3 {
+  .important-notice h3,
+  .warn-notice h3 {
     text-align: center;
     margin: 10px 0 20px;
     font-size: 20px; }
-  .important-notice p {
+  .important-notice p,
+  .warn-notice p {
     font-size: 16px; }
+
+.warn-notice {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5; }
 
 .hero {
   min-height: 750px;
