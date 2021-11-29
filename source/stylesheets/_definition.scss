@@ -82,7 +82,8 @@ h2.ex-header.access {
   height: 6px;
 }
 
-.important-notice {
+.important-notice,
+.warn-notice {
   // from bootstrap
   margin: auto;
   color: #721c24;
@@ -107,4 +108,11 @@ h2.ex-header.access {
   p {
     font-size: 16px;
   }
+}
+
+.warn-notice {
+  // from bootstrap
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
 }
