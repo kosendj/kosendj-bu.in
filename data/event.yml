@@ -3,19 +3,16 @@ timetable:
   - time: "14:00"
     screen_name: やー
     genre: ProgHouseとか
-  - time: "14:50"
+  - time: "15:00"
     screen_name: dachiba
     genre: House
-  - time: "15:40"
+  - time: "16:00"
     screen_name: うなすけ
     genre: Progressive House/Hardcore
-  - time: "16:30"
-    screen_name: はるかぜ
-    genre: ファンコット+etc
-  - time: "17:20"
+  - time: "17:00"
     screen_name: furaji
     genre: 声が入った曲を流したい
-  - time: "18:10"
+  - time: "18:00"
     screen_name: HolyGrail
     genre: エモめのやつ
   - time: "19:00"
