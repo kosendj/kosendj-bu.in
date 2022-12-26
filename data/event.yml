@@ -1,20 +1,23 @@
-date: '2022.09.03 (Sat.) 14:00-20:00'
+date: '2023.01.28 (Sat.) 14:00-20:00'
 timetable:
   - time: "14:00"
-    screen_name: asonas
-    genre: 寿司も踊り出しちゃうやつ
+    screen_name: mactkg
+    genre: "100-126"
   - time: "15:00"
-    screen_name: SpicyCoffee
-    genre: 寿司以外の部分担当
-  - time: "16:00"
-    screen_name: shanonim
-    genre: 寿司に合う音楽
-  - time: "17:00"
-    screen_name: はるかぜ
-    genre: 寿司のことを気にせずファンコット+寿司っぽい何か
-  - time: "18:00"
-    screen_name: うなすけ
-    genre: 染み入る寿司
-  - time: "19:00"
+    screen_name: furaji
+    genre: TBD
+  - time: "15:50"
     screen_name: HolyGrail
-    genre: 寿司ミュージック
+    genre: おつベビ
+  - time: "16:40"
+    screen_name: 肉
+    genre: 今年の気持ちいいです
+  - time: "17:30"
+    screen_name: おみつ
+    genre: 重めのやつ
+  - time: "18:20"
+    screen_name: うなすけ
+    genre: たまにはJ-Core/Hardcore
+  - time: "19:10"
+    screen_name: はるかぜ
+    genre: j-core/jaycore, hardtek
