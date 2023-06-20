@@ -1,20 +1,23 @@
-date: '2023.04.01 (Sat.) 14:00-20:00'
+date: '2023.07.22 (Sat.) 14:00-20:00'
 timetable:
   - time: "14:00"
     screen_name: うなすけ
-    genre: Progressive House
-  - time: "15:00"
-    screen_name: SpicyCoffee
-    genre: アニソンでやるか future bass/funk でやるか
-  - time: "16:00"
-    screen_name: はるかぜ
-    genre: 歌モノで頑張りたい
-  - time: "17:00"
-    screen_name: HolyGrail
-    genre: いい感じの音楽
-  - time: "18:00"
-    screen_name: Takayuki Tominaga
-    genre: いい感じ
-  - time: "19:00"
+    genre: Progressive House でお出迎え
+  - time: "14:50"
     screen_name: furaji
-    genre: chill / ambient / breakcore
+    genre: インターネット
+  - time: "15:40"
+    screen_name: 肉
+    genre: 楽しいやつ
+  - time: "16:30"
+    screen_name: HolyGrail
+    genre: 踊れるロック
+  - time: "17:20"
+    screen_name: いわしま
+    genre: なんとかコア
+  - time: "18:10"
+    screen_name: はるかぜ
+    genre: funkot
+  - time: "19:00"
+    screen_name: DJ 10月から無職(予定)
+    genre: KANEKURE
