@@ -1,4 +1,4 @@
-activate :livereload
+activate :livereload, js_host: ENV['JS_HOST']
 
 activate :external_pipeline,
   name: :sass,

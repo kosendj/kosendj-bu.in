@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    command: bundle exec middleman server --watcher-force-polling
+    tty: true
+    ports:
+      - "4567:4567"
+      - "35729:35729"
+    volumes:
+      - .:/app:cached
+      - bundle:/usr/local/bundle
+      - node_modules:/app/node_modules
+    environment:
+      JS_HOST: localhost
+
+volumes:
+  bundle:
+    driver: local
+  node_modules:
