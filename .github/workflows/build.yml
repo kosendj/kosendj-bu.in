@@ -6,7 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - run: yarn install
+        with:
+          cache: 'yarn'
+      - run: yarn install --immutable
 
       - uses: ruby/setup-ruby@v1
 
