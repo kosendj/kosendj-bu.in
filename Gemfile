@@ -8,3 +8,6 @@ gem "middleman", "~>4"
 gem "middleman-livereload", "~> 3.4"
 
 gem "slim"
+gem "bigdecimal"
+gem "mutex_m"
+gem "base64"
