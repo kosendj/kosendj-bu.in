@@ -35,20 +35,20 @@
 -
   name: jigsaw
   icon: "members/jigsaw.jpg"
-  description: 朝目が覚めたら Funk/Soul のミックスを聞きながら支度をして、出社したら EDM を聞きながらコードを書いて、帰宅したら Classical を聞きながら本を読む生活をしています。
+  description: 24年末、突如ユーロラックの洗礼を受け、モジュールを組み立てるに飽き足らず電子工作でシンセサイザーを作りはじめた。DJとは一体何なのか！？
   activities:
     -
       embed:
   services:
     -
       name: web
-      url: http://jgs.me
+      url: https://jgs.me
     -
-      name: mixcloud
-      url: http://mixcloud.com/neo6120
+      name: YouTube
+      url: https://youtube.com/@jgsw
     -
-      name: last.fm
-      url: http://last.fm/user/neo6120
+      name: Spotify
+      url: https://open.spotify.com/artist/7qh1k7S2e6Is6GuXqRjlc0
 -
   name: mactkg
   icon: "members/mactkg.jpg"
