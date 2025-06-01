@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y build-essential git libpq-dev curl \
     && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
-    && npm install -g pnpm@9.15.2 \
+    && npm install -g pnpm@10.11.0 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app
