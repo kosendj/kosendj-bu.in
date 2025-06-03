@@ -118,7 +118,7 @@ footer
     a.twitter-btn(href="https://twitter.com/search?f=tweets&vertical=default&q=%23kosendj&src=typd")
 
 javascript:
-  $(function(){
+  document.addEventListener('DOMContentLoaded', function(){
     var index = Math.floor(Math.random()*6);
     var directory = "pc"
     if(window.navigator.userAgent.toLowerCase().match(/(iphone|android)/i)) {
