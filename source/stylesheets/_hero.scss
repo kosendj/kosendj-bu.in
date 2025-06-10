@@ -36,16 +36,15 @@
   }
 }
 
-$blur_size: 8px;
 
 .hero:before{
   content: '';
   background: inherit;
-  filter: blur($blur_size);
+  filter: blur(8px);
   position: absolute;
-  top:    -$blur_size;
-  left:   -$blur_size;
-  right:  -$blur_size;
-  bottom: -$blur_size;
+  top:    -8px;
+  left:   -8px;
+  right:  -8px;
+  bottom: -8px;
   z-index: -1;
 }

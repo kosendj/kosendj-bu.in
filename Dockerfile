@@ -2,19 +2,19 @@ FROM ruby:3.3-slim-bookworm
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y build-essential git libpq-dev curl \
-    && curl -sL https://deb.nodesource.com/setup_20.x | bash - \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
+    && npm install -g pnpm@10.11.1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app
 WORKDIR /app
 
-COPY ./Gemfile ./Gemfile.lock ./package.json ./yarn.lock ./
+COPY ./Gemfile ./Gemfile.lock ./package.json ./.npmrc ./
 
 RUN gem install bundler
 RUN bundle install
-RUN corepack enable && corepack install
-RUN yarn install
+RUN pnpm install
 
 COPY . /app
 
