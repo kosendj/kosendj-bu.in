@@ -92,7 +92,7 @@ h2.ex-header.access {
 }
 @media screen and (max-width: 480px) {
   .important-notice,
-.warn-notice {
+  .warn-notice {
     padding: 10px;
     max-width: 90%;
   }
