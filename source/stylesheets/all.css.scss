@@ -17,10 +17,11 @@ header {
       float: left;
       list-style: none;
       margin-left: 20px;
-      font-size: 1.5rem;
+      font-size: 0.9rem;
 
       a {
         color: #000;
+        text-decoration: none;
       }
     }
   }
@@ -36,7 +37,7 @@ header {
 
       li {
         margin-left: 7px;
-        font-size: 1.4rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -57,7 +58,7 @@ footer {
       float: left;
       list-style: none;
       margin-left: 20px;
-      font-size: 1.5rem;
+      font-size: 0.9rem;
       vertical-align: middle;
       line-height: 65px;
 
@@ -121,7 +122,7 @@ footer {
         left: 50%;
 
         li {
-          font-size: 1.3rem;
+          font-size: 0.8rem;
           margin-left: 5px;
           position: relative;
           left: -50%;
@@ -156,12 +157,12 @@ footer {
   padding-bottom: 60px;
 
   .datetime {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 5px;
   }
 
   .venue {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
   }
 
@@ -176,7 +177,7 @@ footer {
     vertical-align: middle;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
 
     a {
     }
@@ -194,7 +195,7 @@ footer {
 @media screen and (max-width: 480px) {
   .event {
     .datetime {
-      font-size: 2rem;
+      font-size: 1.25rem;
     }
   }
 }
@@ -234,13 +235,21 @@ footer {
     }
 
     .left {
-      float: left;
+      flex-shrink: 0;
     }
     .right {
-      margin-left: 100px;
+      margin-left: 20px;
+      flex: 1;
+      font-size: 14px;
+
+      strong {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
 
       .profile {
         padding-top: 10px;
+        margin-bottom: 0;
       }
     }
   }
@@ -270,10 +279,17 @@ footer {
       }
 
       .right {
-        margin-left: 80px;
+        margin-left: 16px;
+        font-size: 14px;
+
+        strong {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
 
         .profile {
           padding-top: 6px;
+          margin-bottom: 0;
         }
       }
     }
@@ -285,19 +301,29 @@ footer {
   margin: 0 auto;
 
   p {
-    font-size: 1.8rem;
-    margin-bottom: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 50px !important;
   }
 
   table {
     tr {
+      border-bottom: none;
+      border-bottom-width: 0;
+      border-top: 1px solid #dee2e6;
+
+      td {
+        border-bottom: none;
+        border-bottom-width: 0;
+        font-size: 0.9rem;
+      }
+
       td.time {
         padding: 19px 10px;
       }
 
       td.dj {
         padding: 18px 10px;
-        font-size: 1.5rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -312,7 +338,7 @@ footer {
     width: 100%;
 
     p {
-      font-size: 1.5rem;
+      font-size: 0.9rem;
       margin-bottom: 30px;
     }
   }
@@ -321,8 +347,11 @@ footer {
 .venues {
   .hako {
     margin-bottom: 8px;
-    font-size: 1.7rem;
+    font-size: 1.0rem;
     font-weight: bold;
+  }
+  p {
+    font-size: 0.9rem;
   }
   .address {
     margin-bottom: 3px;

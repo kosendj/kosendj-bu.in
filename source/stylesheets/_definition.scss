@@ -15,19 +15,25 @@ html {
 
 body {
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 10px !important;
+  margin-top: 0 !important;
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 0.625rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
 }
 
 h2.ex-header {
   padding: 80px 0 50px;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-top: 0px;
@@ -91,7 +97,7 @@ h2.ex-header.access {
   border-color: #f5c6cb;
   padding: 10px 20px;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: .15625rem;
   max-width: 60%;
 
   @media screen and (max-width: 480px) {

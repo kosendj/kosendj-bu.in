@@ -72,15 +72,14 @@ a(name="member")
   .members
     - data.members.each do |member|
       .member
-        .border
-          .left
-            .icon
-              = image_tag(member.icon, width: "80px")
-          .right
-            strong
-              span.name = member.name
-              = link_to image_tag("new_window.png"), member.services&.first.url, class: "new-window"
-            .profile = member.description
+        .left
+          .icon
+            = image_tag(member.icon, width: "80px")
+        .right
+          strong
+            span.name = member.name
+            = link_to image_tag("new_window.png"), member.services&.first.url, class: "new-window"
+          .profile = member.description
 
 a(name="access")
 .black-container.venues
