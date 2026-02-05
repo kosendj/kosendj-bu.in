@@ -1,4 +1,4 @@
-FROM ruby:3.3-slim-bookworm
+FROM ruby:3.4-slim-bookworm
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y build-essential git libpq-dev curl \
