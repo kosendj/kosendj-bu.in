@@ -14,5 +14,8 @@ $ bundle exec middleman server
 
 ```shell
 $ cd kosendj-bu.in
-$ bundle exec middleman deploy
+$ bundle exec middleman build
+$ git push origin master
 ```
+
+`master` ブランチへの push をトリガーに GitHub Actions が `gh-pages` へ deploy します。
