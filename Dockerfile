@@ -1,10 +1,10 @@
-FROM ruby:3.3-slim-bookworm
+FROM ruby:3.4-slim-bookworm
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y build-essential git libpq-dev curl \
-    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && apt-get install -y nodejs \
-    && npm install -g pnpm@10.11.1 \
+    && npm install -g pnpm@10.28.2 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app

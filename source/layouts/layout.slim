@@ -7,6 +7,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
     /! Use title if it's in the page YAML frontmatter
     title= current_page.data.title || "kosendj-bu"
+    link rel="icon" type="image/png" href="/favicon.png"
     = stylesheet_link_tag "all"
     link rel="preconnect" href="https://fonts.googleapis.com"
     link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"
@@ -19,14 +20,13 @@ html
     meta property="og:description" content="kosendj-buは高専生が集まってDJをやる部活動です"
     meta name="keywords" content="高専,DJ,高専DJ部,kosendj-bu,高専DJ"
     meta name="description" content="kosendj-buは高専生が集まってDJをやる部活動です"
+    script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRXW0QMBG9"
     javascript:
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-5495179-2', 'auto');
-        ga('send', 'pageview');
+      try{Typekit.load({ async: true });}catch(e){}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZRXW0QMBG9');
 
   body class=page_classes
     = yield
