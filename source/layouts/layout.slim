@@ -9,8 +9,10 @@ html
     title= current_page.data.title || "kosendj-bu"
     link rel="icon" type="image/png" href="/favicon.png"
     = stylesheet_link_tag "all"
-    link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-    link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    link rel="preconnect" href="https://fonts.googleapis.com"
+    link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"
+    link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"
+    link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
     meta property="og:title" content="kosendj-bu"
     meta property="og:type" content="website"
     meta property="og:url" content="https://kosendj-bu.in"
@@ -18,8 +20,6 @@ html
     meta property="og:description" content="kosendj-buは高専生が集まってDJをやる部活動です"
     meta name="keywords" content="高専,DJ,高専DJ部,kosendj-bu,高専DJ"
     meta name="description" content="kosendj-buは高専生が集まってDJをやる部活動です"
-    script(src="https://use.typekit.net/jmv6whh.js")
-    link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
     script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRXW0QMBG9"
     javascript:
       try{Typekit.load({ async: true });}catch(e){}
