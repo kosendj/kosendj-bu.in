@@ -585,10 +585,8 @@ button {
 }
 
 .dj-card__links a {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  padding: 4px 10px;
+  font-size: 1rem;
+  padding: 6px 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
 }
