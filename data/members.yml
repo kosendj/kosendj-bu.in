@@ -8,10 +8,10 @@
   services:
     -
       name: soundcloud
-      url: http://soundcloud.com/asonas
+      url: https://soundcloud.com/asonas
     -
       name: twitter
-      url: http://twitter.com/asonas
+      url: https://x.com/asonas
 -
   name: rooandqoo
   icon: "members/rooandqoo.jpg"
@@ -22,16 +22,16 @@
   services:
     -
       name: web
-      url: http://rooandqoo.com
+      url: https://rooandqoo.com
     -
       name: mixcloud
-      url: http://mixcloud.com/rooandqoo
+      url: https://mixcloud.com/rooandqoo
     -
       name: twitter
-      url: http://twitter.com/rooandqoo
+      url: https://x.com/rooandqoo
     -
       name: tumblr
-      url: http://rooandqoo.tumblr.com/
+      url: https://rooandqoo.tumblr.com/
 -
   name: jigsaw
   icon: "members/jigsaw.jpg"
@@ -59,100 +59,16 @@
   services:
     -
       name: web
-      url: http://makerbox.net
+      url: https://makerbox.net
     -
       name: mixcloud
-      url: http://mixcloud.com/mactkg
+      url: https://mixcloud.com/mactkg
     -
       name: soundcloud
-      url: http://soundcloud.com/mactkg
+      url: https://soundcloud.com/mactkg
     -
       name: last.fm
-      url: http://last.fm/user/haraboo
--
-  name: maccha
-  icon: "members/maccha.jpg"
-  description: 最近はエオルゼアに引き篭もってばかり。初DJで緊張している。
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: web
-      url: http://midnightblue.jp/blog/
-    -
-      name: twitter
-      url: http://twitter.com/maccha
--
-  name: toihrk
-  icon: "members/toihrk.jpg"
-  description: 最近はダーツにハマってます。
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: web
-      url: http://dj.toihrk.me
-    -
-      name: twitter
-      url: http://twitter.com/toihrk
--
-  name: y_taq
-  icon: "members/y_taq.jpg"
-  description: 栃木県のハードコア初心者DJ。
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: twitter
-      url: http://twitter.com/y_taq
-    -
-      name: mixcloud
-      url: http://mixcloud.com/ytaq
--
-  name: XEN
-  icon: "members/xen.jpg"
-  description: 曲作る人なのでDJとかわかんないです＞＜
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: twitter
-      url: http://twitter.com/xen_xxx
-    -
-      name: soundcloud
-      url: http://soundcloud.com/suu712
--
-  name: 八嶋
-  icon: "members/yashima.jpg"
-  description: 初DJ。普段は曲を作っています。DRUM'N'BASSを中心に色々とかけていきます。
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: twitter
-      url: https://twitter.com/AmaneKudoh
-    -
-      name: soundcloud
-      url: https://soundcloud.com/8_to_7
-    -
-      name: bandcamp
-      url: http://8to7.bandcamp.com/
--
-  name: 便座チープネス
-  icon: "members/frkout.jpg"
-  description: "jazz/hadoop/funk/ビッグデータ/soul"
-  activities:
-    -
-      embed:
-  services:
-    -
-      name: twitter
-      url: http://twitter.com/frkout
+      url: https://last.fm/user/haraboo
 -
   name: sorah
   icon: "members/sorah.jpg"
@@ -163,7 +79,7 @@
   services:
     -
       name: twitter
-      url: https://twitter.com/sora_h
+      url: https://x.com/sora_h
     -
       name: mixcloud
       url: https://www.mixcloud.com/soraher
@@ -180,27 +96,27 @@
       url: https://unasuke.com
     -
       name: twitter
-      url: http://twitter.com/yu_suke1994
+      url: https://x.com/yu_suke1994
     -
       name: mixcloud
       url: https://www.mixcloud.com/yu_suke1994
 -
   name: HolyGrail
-  icon: "members/holygrail.jpg"
-  description: 俺がiTunesだ！本当のGeniusってやつを魅せてやるぜ！
+  icon: "members/holygrail.png"
+  description: 他の人があんまりやらないような曲を流すのが好き
   activities:
     -
       embed:
   services:
     -
       name: web
-      url: http://holygrail.hatenablog.com/
+      url: https://kumoito.dev/
     -
       name: twitter
-      url: http://twitter.com/HolyGrail
+      url: https://x.com/HolyGrail
     -
-      name: soundcloud
-      url: https://soundcloud.com/holygrail81
+      name: twitch
+      url: https://www.twitch.tv/kumoitomanadj
 -
   name: Takayuki&nbsp;Tominaga
   icon: "members/tominaga.jpg"
@@ -211,7 +127,7 @@
   services:
     -
       name: twitter
-      url: http://twitter.com/touka_tt
+      url: https://x.com/touka_tt
     -
       name: mixcloud
       url: https://www.mixcloud.com/touka_tt/
@@ -226,7 +142,7 @@
   services:
     -
       name: twitter
-      url: http://twitter.com/furaji
+      url: https://x.com/furaji
     -
       name: mixcloud
       url: https://www.mixcloud.com/furaji/
@@ -243,7 +159,7 @@
   services:
     -
       name: twitter
-      url: https://twitter.com/nao0
+      url: https://x.com/nao0
 -
   name: SpicyCoffee
   icon: "members/SpicyCoffee.jpg"
@@ -254,7 +170,7 @@
   services:
     -
       name: twitter
-      url: https://twitter.com/SpicyCoffee66
+      url: https://x.com/SpicyCoffee66
     -
       name: mixcloud
       url: https://www.mixcloud.com/SpicyCoffee66/
