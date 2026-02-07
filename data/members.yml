@@ -2,9 +2,6 @@
   name: asonas
   icon: "members/asonas.jpg"
   description: 頭に猫を乗っけていないと体のバランスが取れないです
-  activities:
-    -
-      embed:
   services:
     -
       name: soundcloud
@@ -16,9 +13,6 @@
   name: rooandqoo
   icon: "members/rooandqoo.jpg"
   description: 双子の娘の父業をしつつ、会社勤めをしています。烏龍茶とトランスが燃料です
-  activities:
-    -
-      embed:
   services:
     -
       name: web
@@ -36,9 +30,6 @@
   name: jigsaw
   icon: "members/jigsaw.jpg"
   description: 24年末、突如ユーロラックの洗礼を受け、モジュールを組み立てるに飽き足らず電子工作でシンセサイザーを作りはじめた。DJとは一体何なのか！？
-  activities:
-    -
-      embed:
   services:
     -
       name: web
@@ -53,9 +44,6 @@
   name: mactkg
   icon: "members/mactkg.jpg"
   description: feature-funkって知ってる?!
-  activities:
-    -
-      embed:
   services:
     -
       name: web
@@ -73,9 +61,6 @@
   name: sorah
   icon: "members/sorah.jpg"
   description: よくわからないままアイドルプロデュースをしています。
-  activities:
-    -
-      embed:
   services:
     -
       name: twitter
@@ -87,9 +72,6 @@
   name: unasuke
   icon: "members/unasuke.jpg"
   description: ブースで飛び跳ねる
-  activities:
-    -
-      embed:
   services:
     -
       name: web
@@ -104,9 +86,6 @@
   name: HolyGrail
   icon: "members/holygrail.png"
   description: 他の人があんまりやらないような曲を流すのが好き
-  activities:
-    -
-      embed:
   services:
     -
       name: web
@@ -118,12 +97,11 @@
       name: twitch
       url: https://www.twitch.tv/kumoitomanadj
 -
-  name: Takayuki&nbsp;Tominaga
+  name: Takayuki Tominaga
   icon: "members/tominaga.jpg"
-  description: a.k.a. とーかさん<br>ジャンル名にHardがついている曲は大体好きな傾向があります。
-  activities:
-    -
-      embed:
+  description: |
+    a.k.a. とーかさん
+    ジャンル名にHardがついている曲は大体好きな傾向があります。
   services:
     -
       name: twitter
@@ -134,11 +112,7 @@
 -
   name: furaji
   icon: "members/furaji.png"
-  circle_icon: "members/furaji_circle.png"
   description: 将来の夢は女子中学生です
-  activities:
-    -
-      embed:
   services:
     -
       name: twitter
@@ -153,9 +127,6 @@
   name: nAo
   icon: "members/nao.jpg"
   description: 好きなBPMは128です。週6で飲酒をしています。
-  activities:
-    -
-      embed:
   services:
     -
       name: twitter
@@ -164,9 +135,6 @@
   name: SpicyCoffee
   icon: "members/SpicyCoffee.jpg"
   description: 学生時代 CD ショップの試聴で休日を潰していたタイプ。
-  activities:
-    -
-      embed:
   services:
     -
       name: twitter
