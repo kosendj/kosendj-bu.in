@@ -99,7 +99,7 @@ section.section.section--djs#djs
             = image_tag(member.icon, alt: member.name)
           .dj-card__body
             h3 = member.name
-            p.dj-card__desc = member.description
+            p.dj-card__desc == member.description.strip.gsub("\n", "<br>")
             - if member.services && member.services.any?
               - service_icons = { "twitter" => "fa-brands fa-x-twitter", "soundcloud" => "fa-brands fa-soundcloud", "mixcloud" => "fa-brands fa-mixcloud", "web" => "fa-solid fa-globe", "YouTube" => "fa-brands fa-youtube", "Spotify" => "fa-brands fa-spotify", "last.fm" => "fa-brands fa-lastfm", "tumblr" => "fa-brands fa-tumblr", "twitch" => "fa-brands fa-twitch" }
               .dj-card__links
@@ -137,11 +137,11 @@ section.section.section--contact#contact
             = link_to "https://sabaco.jp/", "https://sabaco.jp/", target: "_blank", rel: "noopener"
             = link_to "https://www.twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
       .contact-map
-        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.401607413774!2d139.71482921860746!3d35.706566315441385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2sjp!4v1493725017887" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen)
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.401607413774!2d139.71482921860746!3d35.706566315441385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2sjp!4v1493725017887" width="100%" height="360" style="border:0" allowfullscreen)
 
 footer.site-footer
   .container
-    = image_tag "logo_b.png", width: "180", class: "footer-logo"
+    = image_tag "logo_b.png", alt: "kosendj-bu", width: "180", class: "footer-logo"
     p.footer-text
       | © #{Time.now.year} kosendj-bu. All rights reserved.
 
