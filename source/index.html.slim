@@ -101,9 +101,14 @@ section.section.section--djs#djs
             h3 = member.name
             p.dj-card__desc = member.description
             - if member.services && member.services.any?
+              - service_icons = { "twitter" => "fa-brands fa-x-twitter", "soundcloud" => "fa-brands fa-soundcloud", "mixcloud" => "fa-brands fa-mixcloud", "web" => "fa-solid fa-globe", "YouTube" => "fa-brands fa-youtube", "Spotify" => "fa-brands fa-spotify", "last.fm" => "fa-brands fa-lastfm", "tumblr" => "fa-brands fa-tumblr", "twitch" => "fa-brands fa-twitch" }
               .dj-card__links
                 - member.services.each do |service|
-                  = link_to service.name, service.url, target: "_blank", rel: "noopener"
+                  a href=service.url target="_blank" rel="noopener" title=service.name
+                    - if service_icons[service.name]
+                      i class=service_icons[service.name]
+                    - else
+                      | #{service.name}
 
 section.section.section--gallery#gallery
   .container
