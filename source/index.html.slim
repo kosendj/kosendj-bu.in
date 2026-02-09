@@ -24,6 +24,9 @@ nav.site-nav data-nav="main"
     = link_to "ACCESS", "#contact"
 
 section.hero#home
+  video.hero__video autoplay=true muted=true loop=true playsinline=true preload="none" poster=image_path("pc/mv0.jpg") aria-hidden="true" data-desktop-video="true"
+    source data-src=image_path("pc/hero.webm") type="video/webm"
+    source data-src=image_path("pc/hero.mp4") type="video/mp4"
   .hero__overlay
   .hero__content
     = image_tag "logo.png", alt: "kosendj-bu", class: "hero__logo"
@@ -150,6 +153,7 @@ javascript:
     var nav = document.querySelector('[data-nav="main"]');
     var toggle = document.querySelector('[data-nav-toggle="true"]');
     var menu = document.querySelector('[data-nav-menu="true"]');
+    var isMobile = window.matchMedia('(max-width: 900px)').matches || window.navigator.userAgent.toLowerCase().match(/(iphone|android)/i);
     if (toggle && nav && menu) {
       toggle.addEventListener('click', function(){
         var isOpen = nav.classList.toggle('is-open');
@@ -163,9 +167,21 @@ javascript:
       });
     }
 
+    var heroVideo = document.querySelector('[data-desktop-video="true"]');
+    if (heroVideo && !isMobile) {
+      heroVideo.querySelectorAll('source[data-src]').forEach(function(source){
+        source.src = source.getAttribute('data-src');
+      });
+      heroVideo.load();
+      var playPromise = heroVideo.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(function(){});
+      }
+    }
+
     var index = Math.floor(Math.random()*6);
     var directory = "pc"
-    if(window.navigator.userAgent.toLowerCase().match(/(iphone|android)/i)) {
+    if(isMobile) {
       directory = "sp"
     }
     var url = 'images/' + directory + '/mv' + index + '.jpg';
