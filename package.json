@@ -4,7 +4,7 @@
     "build": "sass source/stylesheets/all.css.scss .tmp/all.css"
   },
   "devDependencies": {
-    "sass": "^1.98.0"
+    "sass": "^1.99.0"
   },
   "packageManager": "pnpm@10.28.2"
 }
