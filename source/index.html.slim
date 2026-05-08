@@ -43,9 +43,9 @@ section.section.section--events#events
     h2.section-title EVENT
     .event-card
       .event-card__head
-        h3.event-card__title 第41回
+        h3.event-card__title 第#{data.event.number}回
         .event-card__actions
-          = link_to "TwiPlaで予約", "https://twipla.jp/events/669873", class: "btn btn--primary btn--sm", target: "_blank", rel: "noopener"
+          = link_to "TwiPlaで予約", data.event.twipla_url, class: "btn btn--primary btn--sm", target: "_blank", rel: "noopener"
           = link_to "Twitch配信", "https://www.twitch.tv/sabaco_waseda", class: "btn btn--outline btn--sm", target: "_blank", rel: "noopener"
       .event-card__info
         .info-item
@@ -57,7 +57,7 @@ section.section.section--events#events
           span.info-label 料金
           span.info-value
             i.fa-solid.fa-ticket
-            | 2000円（1drink）
+            | 2300円（+1drink 700円）
         .info-item
           span.info-label 時間
           span.info-value
@@ -90,7 +90,7 @@ section.section.section--events#events
         | また、当日はTwitchによる配信を以下のリンクよりご覧いただけます。
       .notice-links
         = link_to "https://www.twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
-        = link_to "https://twipla.jp/events/669873", "https://twipla.jp/events/669873", target: "_blank", rel: "noopener"
+        = link_to data.event.twipla_url, data.event.twipla_url, target: "_blank", rel: "noopener"
 
 section.section.section--djs#djs
   .container
