@@ -12,7 +12,7 @@ INPUT = <<~TEXT
   Rooq	速いハウス	0:45:00	16:15	17:00
   furaji	5月で現在の会社が無くなりまstep	0:45:00	17:00	17:45
   ちゃんにく	グルミク収録曲	0:45:00	17:45	18:30
-  sylph01/G4きゅーぶ	RubyIlluminationsの残り物(170+)	0:45:00	18:30	19:15
+  sylph01/G4きゅーぶ / いかるが	RubyIlluminationsの残り物(170+)	0:45:00	18:30	19:15
   HolyGrail	RubyIlluminations 後夜祭	0:45:00	19:15	20:00
 TEXT
 
