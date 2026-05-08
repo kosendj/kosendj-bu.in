@@ -1,22 +1,28 @@
 ---
 date: 2026.06.13 (Sat.) 14:00-20:00
-twipla_url: https://twipla.jp/events/669873
+twipla_url: https://twipla.jp/events/727590
 timetable:
 - time: '14:00'
+  screen_name: あそなす
+  genre: CDJはやり方忘れてしまったので楽器でいい感じに...
+- time: '14:45'
+  screen_name: うなすけ
+  genre: Progressive House軸
+- time: '15:30'
   screen_name: Takayuki Tominaga
   genre: たのしい
-- time: '15:00'
-  screen_name: うなすけ
-  genre: Progressive House
-- time: '16:00'
+- time: '16:15'
   screen_name: Rooq
   genre: 速いハウス
 - time: '17:00'
   screen_name: furaji
   genre: 5月で現在の会社が無くなりまstep
-- time: '18:00'
+- time: '17:45'
+  screen_name: ちゃんにく
+  genre: グルミク収録曲
+- time: '18:30'
   screen_name: sylph01/G4きゅーぶ
   genre: RubyIlluminationsの残り物(170+)
-- time: '19:00'
+- time: '19:15'
   screen_name: HolyGrail
   genre: RubyIlluminations 後夜祭
