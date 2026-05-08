@@ -7,7 +7,7 @@ EVENT_NUMBER = 42
 EVENT_TITLE = "第#{EVENT_NUMBER}回 高専DJ部"
 VENUE = '茶箱 sabaco (西早稲田)'
 VENUE_ADDRESS = '東京都新宿区西早稲田2-1-19 YKビル B1F'
-FEE = '2000円（+1drink 700円）'
+FEE = '2300円（+1drink 700円）'
 HASHTAG = '#kosendj'
 TWITCH_URL = 'https://www.twitch.tv/sabaco_waseda'
 
