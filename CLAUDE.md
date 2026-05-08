@@ -67,8 +67,8 @@ Middleman の Data Files 機能により `data.event`、`data.members` として
 
 ## イベント更新時の変更箇所
 
-- `data/event.yml` — 日時・タイムテーブル
-- `source/index.html.slim` — イベント回数（「第41回」）、TwiPla URL、Twitch 配信 URL、注意書き内リンク
+- `data/event.yml` — 回数・日時・タイムテーブル・TwiPla URL
+- `source/index.html.slim` — Twitch 配信 URL、注意書き内リンク
 
 ## Gotchas
 

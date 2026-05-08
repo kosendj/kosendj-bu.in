@@ -3,8 +3,6 @@ require 'erb'
 require 'cgi'
 require 'fileutils'
 
-EVENT_NUMBER = 42
-EVENT_TITLE = "第#{EVENT_NUMBER}回 高専DJ部"
 VENUE = '茶箱 sabaco (西早稲田)'
 VENUE_ADDRESS = '東京都新宿区西早稲田2-1-19 YKビル B1F'
 FEE = '2300円（+1drink 700円）'
@@ -15,6 +13,7 @@ DATA_PATH   = File.expand_path('../data/event.yml', __dir__)
 OUTPUT_PATH = File.expand_path('../tmp/twipla.html', __dir__)
 
 event = YAML.load_file(DATA_PATH)
+EVENT_TITLE = "第#{event['number']}回 高専DJ部"
 
 def h(text)
   CGI.escapeHTML(text.to_s)

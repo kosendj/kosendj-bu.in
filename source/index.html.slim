@@ -43,7 +43,7 @@ section.section.section--events#events
     h2.section-title EVENT
     .event-card
       .event-card__head
-        h3.event-card__title 第41回
+        h3.event-card__title 第#{data.event.number}回
         .event-card__actions
           = link_to "TwiPlaで予約", data.event.twipla_url, class: "btn btn--primary btn--sm", target: "_blank", rel: "noopener"
           = link_to "Twitch配信", "https://www.twitch.tv/sabaco_waseda", class: "btn btn--outline btn--sm", target: "_blank", rel: "noopener"

@@ -1,5 +1,6 @@
 require 'yaml'
 
+NUMBER = 42
 DATE = '2026.06.13 (Sat.) 14:00-20:00'
 TWIPLA_URL = 'https://twipla.jp/events/727590'
 
@@ -28,6 +29,7 @@ timetable = rows.map do |row|
 end
 
 data = {
+  'number' => NUMBER,
   'date' => DATE,
   'twipla_url' => TWIPLA_URL,
   'timetable' => timetable,
