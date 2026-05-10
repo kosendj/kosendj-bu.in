@@ -2,12 +2,12 @@
 title: kosendj-bu
 ---
 
-- event_lineup = data.event.timetable.map { |tt| tt.screen_name }.uniq
 - gallery_images = (0..5).map { |i| "pc/mv#{i}.jpg" }
 
 nav.site-nav data-nav="main"
   .nav-inner
-    a.brand href="#home" KOSENDJ-BU
+    a.brand href="#home"
+      | KOSENDJ-BU
     button.nav-toggle type="button" aria-label="メニューを開く" aria-controls="nav-menu" aria-expanded="false" data-nav-toggle="true"
       span
       span
@@ -27,126 +27,189 @@ section.hero#home
   video.hero__video autoplay=true muted=true loop=true playsinline=true preload="none" poster=image_path("pc/mv0.jpg") aria-hidden="true" data-desktop-video="true"
     source data-src=image_path("pc/hero.webm") type="video/webm"
     source data-src=image_path("pc/hero.mp4") type="video/mp4"
-  .hero__overlay
+  .hero__scrim
+  .hero__grain
   .hero__content
-    = image_tag "logo.png", alt: "kosendj-bu", class: "hero__logo"
-    p.hero__eyebrow KOSENDJ-BU
+    = image_tag "logo.png", alt: "高専DJ部", class: "hero__logo"
     h1.hero__title 高専DJ部
     p.hero__lead
       | 「高専DJ部」は高専生やそのOB/OGが集まってDJをやる部活動です。
+    .hero__eyebrow
+      span.eyebrow-bar
+      span.eyebrow-text VOL.#{data.event.number} &middot; #{data.event.date.split.first}
+    .hero__cta
+      a.btn.btn--primary href="#events"
+        span NEXT EVENT
+        span.btn__arrow &rarr;
   .hero__scroll
-    .scroll-indicator
-      .scroll-dot
+    span.scroll-label SCROLL
+    span.scroll-line
 
 section.section.section--events#events
   .container
-    h2.section-title EVENT
+    header.section-head
+      span.section-head__index 01 / 04
+      h2.section-title
+        span EVENT
+        span.section-title__jp 次のイベント
+      span.section-head__rule
+
     .event-card
-      .event-card__head
-        h3.event-card__title 第#{data.event.number}回
-        .event-card__actions
-          = link_to "TwiPlaで予約", data.event.twipla_url, class: "btn btn--primary btn--sm", target: "_blank", rel: "noopener"
-          = link_to "Twitch配信", "https://www.twitch.tv/sabaco_waseda", class: "btn btn--outline btn--sm", target: "_blank", rel: "noopener"
-      .event-card__info
-        .info-item
-          span.info-label 会場
-          span.info-value
-            i.fa-solid.fa-location-dot
-            | 茶箱 sabaco (西早稲田)
-        .info-item
-          span.info-label 料金
-          span.info-value
-            i.fa-solid.fa-ticket
-            | 2300円（+1drink 700円）
-        .info-item
-          span.info-label 時間
-          span.info-value
-            i.fa-solid.fa-clock
-            = data.event.date
-        .info-item
-          span.info-label ハッシュタグ
-          span.info-value
-            i.fa-solid.fa-hashtag
-            = link_to "kosendj", "https://x.com/search?q=%23kosendj&src=typed_query&f=live", class: "info-tag", target: "_blank", rel: "noopener"
-      .event-card__timetable
-        h4.section-subtitle タイムテーブル
-        .timetable-list
-          - data.event.timetable.each do |tt|
+      .event-card__hero
+        .event-card__vol
+          span.vol-label VOL.
+          span.vol-number = format('%03d', data.event.number)
+        .event-card__title-block
+          span.kicker NEXT&nbsp;NIGHT
+          h3.event-card__title 第#{data.event.number}回 高専DJ部
+          p.event-card__date = data.event.date
+
+      .event-card__grid
+        .info-row
+          .info-cell
+            span.info-label 会場
+            span.info-value
+              = link_to "茶箱 sabaco", "#contact", class: "info-tag"
+            span.info-sub 東京都新宿区西早稲田 2-1-19 YK B1F
+          .info-cell
+            span.info-label 料金
+            span.info-value &yen;2,300
+            span.info-sub +1 drink &yen;700
+          .info-cell
+            span.info-label ハッシュ
+            span.info-value
+              = link_to "#kosendj", "https://x.com/search?q=%23kosendj&src=typed_query&f=live", class: "info-tag", target: "_blank", rel: "noopener"
+            span.info-sub Twitter / X live
+          .info-cell
+            span.info-label 配信
+            span.info-value
+              = link_to "Twitch Live", "https://www.twitch.tv/sabaco_waseda", class: "info-tag", target: "_blank", rel: "noopener"
+            span.info-sub sabaco_waseda
+
+      .timetable
+        .timetable__head
+          span.timetable__title TIMETABLE
+          span.timetable__rule
+          span.timetable__count #{data.event.timetable.count}&nbsp;sets
+        .timetable__list
+          - data.event.timetable.each_with_index do |tt, i|
             .timetable-row
-              .timetable-time = tt.time
-              .timetable-body
-                strong = tt.screen_name
-                span = "— #{tt.genre}"
+              span.timetable-row__num = format('%02d', i + 1)
+              span.timetable-row__time = tt.time
+              .timetable-row__body
+                strong.timetable-row__name = tt.screen_name
+                span.timetable-row__genre = tt.genre
+        .timetable__cta
+          = link_to data.event.twipla_url, class: "btn btn--primary", target: "_blank", rel: "noopener" do
+            span TwiPlaで参加登録
+            span.btn__arrow &rarr;
 
     .notice-card
-      h3.notice-title TwiPlaでの参加登録について
-      p
-        | 高専DJ部では、茶箱にお越しいただく方の人数を把握するため、TwiPlaを使用しています。
-        br
-        | 当日お越しいただく際には、TwiPlaでの参加登録をよろしくお願いします。
-        br
-        | 参加登録は上限に達しなければ当日でも構いません。
-        br
-        | また、当日はTwitchによる配信を以下のリンクよりご覧いただけます。
-      .notice-links
-        = link_to "https://www.twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
-        = link_to data.event.twipla_url, data.event.twipla_url, target: "_blank", rel: "noopener"
+      .notice-card__head
+        span.notice-card__tag NOTICE
+        h3.notice-card__title 参加登録について
+      .notice-card__body
+        p
+          | 高専DJ部では、茶箱にお越しいただく方の人数を把握するためにTwiPlaを使用しています。
+          br
+          | 当日いらっしゃる際にはTwiPlaでの参加登録をお願いします。上限に達しなければ当日でも構いません。
+          br
+          | また、当日はTwitchによる配信を以下のリンクよりご覧いただけます。
+        ul.notice-card__links
+          li
+            span.link-label TwiPla
+            = link_to data.event.twipla_url, data.event.twipla_url, target: "_blank", rel: "noopener"
+          li
+            span.link-label Twitch
+            = link_to "https://www.twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
 
 section.section.section--djs#djs
   .container
-    h2.section-title MEMBER
+    header.section-head
+      span.section-head__index 02 / 04
+      h2.section-title
+        span DJ
+        span.section-title__jp 部員
+      span.section-head__rule
+    .dj-meta
+      span.dj-meta__count #{data.members.count} active members
+      span.dj-meta__bar
+      span 高専生 &amp; OB / OG
     .dj-grid
-      - data.members.each do |member|
-        .dj-card
+      - service_icons = { "twitter" => "fa-brands fa-x-twitter", "soundcloud" => "fa-brands fa-soundcloud", "mixcloud" => "fa-brands fa-mixcloud", "web" => "fa-solid fa-globe", "YouTube" => "fa-brands fa-youtube", "Spotify" => "fa-brands fa-spotify", "last.fm" => "fa-brands fa-lastfm", "tumblr" => "fa-brands fa-tumblr", "twitch" => "fa-brands fa-twitch" }
+      - data.members.each_with_index do |member, i|
+        article.dj-card
+          .dj-card__index = format('%02d', i + 1)
           .dj-card__image
             = image_tag(member.icon, alt: member.name)
+            span.dj-card__plus
           .dj-card__body
-            h3 = member.name
+            h3.dj-card__name = member.name
             p.dj-card__desc == member.description.strip.gsub("\n", "<br>")
             - if member.services && member.services.any?
-              - service_icons = { "twitter" => "fa-brands fa-x-twitter", "soundcloud" => "fa-brands fa-soundcloud", "mixcloud" => "fa-brands fa-mixcloud", "web" => "fa-solid fa-globe", "YouTube" => "fa-brands fa-youtube", "Spotify" => "fa-brands fa-spotify", "last.fm" => "fa-brands fa-lastfm", "tumblr" => "fa-brands fa-tumblr", "twitch" => "fa-brands fa-twitch" }
-              .dj-card__links
+              ul.dj-card__links
                 - member.services.each do |service|
-                  a href=service.url target="_blank" rel="noopener" title=service.name
-                    - if service_icons[service.name]
-                      i class=service_icons[service.name]
-                    - else
-                      | #{service.name}
+                  li
+                    a href=service.url target="_blank" rel="noopener" title=service.name aria-label=service.name
+                      - if service_icons[service.name]
+                        i class=service_icons[service.name]
+                      - else
+                        | #{service.name}
 
 section.section.section--gallery#gallery
   .container
-    h2.section-title GALLERY
+    header.section-head
+      span.section-head__index 03 / 04
+      h2.section-title
+        span GALLERY
+        span.section-title__jp 記録
+      span.section-head__rule
     .gallery-grid
-      - gallery_images.each do |img|
-        .gallery-item
+      - gallery_images.each_with_index do |img, i|
+        figure.gallery-item class=("gallery-item--#{['a','b','c','d','e','f'][i]}")
           = image_tag(img, alt: "kosendj-bu gallery", loading: "lazy")
+          figcaption
+            span.cap-num #{format('%02d', i + 1)} / 06
 
 section.section.section--contact#contact
   .container
-    h2.section-title ACCESS
+    header.section-head
+      span.section-head__index 04 / 04
+      h2.section-title
+        span ACCESS
+        span.section-title__jp 会場
+      span.section-head__rule
     .contact-grid
       .contact-card
-        h3 茶箱 sabaco
-        .contact-block
-          .contact-label 住所
-          p
-            | 東京都新宿区西早稲田2-1-19 YKビル B1F
-        .contact-block
-          .contact-label アクセス
-          p 東京メトロ東西線 早稲田駅 2,3b 出口より徒歩約5分
-        .contact-block
-          .contact-label リンク
-          .contact-links
-            = link_to "https://sabaco.jp/", "https://sabaco.jp/", target: "_blank", rel: "noopener"
-            = link_to "https://www.twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
+        .contact-card__head
+          span.contact-card__tag VENUE
+          h3 茶箱 sabaco
+        dl.contact-list
+          dt 住所
+          dd 東京都新宿区西早稲田 2-1-19 YK ビル B1F
+          dt アクセス
+          dd 東京メトロ東西線「早稲田駅」 2&middot;3b 出口 徒歩 5 分
+          dt リンク
+          dd
+            ul.contact-links
+              li
+                span.link-label SITE
+                = link_to "sabaco.jp", "https://sabaco.jp/", target: "_blank", rel: "noopener"
+              li
+                span.link-label TWITCH
+                = link_to "twitch.tv/sabaco_waseda", "https://www.twitch.tv/sabaco_waseda", target: "_blank", rel: "noopener"
       .contact-map
-        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.401607413774!2d139.71482921860746!3d35.706566315441385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2sjp!4v1493725017887" width="100%" height="360" style="border:0" allowfullscreen)
+        .contact-map__frame
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.401607413774!2d139.71482921860746!3d35.706566315441385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c76fd46b7ed7f2!2z6Z-z5qW95Zar6Iy2U2FiYWNv!5e0!3m2!1sja!2sjp!4v1493725017887" width="100%" height="100%" style="border:0" allowfullscreen)
+        .contact-map__legend
+          span.legend-coord 35.7065&deg;N
+          span.legend-coord 139.7148&deg;E
 
 footer.site-footer
   .container
-    = image_tag "logo_b.png", alt: "kosendj-bu", width: "180", class: "footer-logo"
-    p.footer-text
-      | © #{Time.now.year} kosendj-bu. All rights reserved.
+    = image_tag "logo_b.png", alt: "kosendj-bu", class: "footer-logo"
+    p.footer-copyright
+      | &copy; #{Time.now.year} kosendj-bu
 
 javascript:
   document.addEventListener('DOMContentLoaded', function(){
@@ -180,13 +243,20 @@ javascript:
     }
 
     var index = Math.floor(Math.random()*6);
-    var directory = "pc"
-    if(isMobile) {
-      directory = "sp"
-    }
+    var directory = isMobile ? "sp" : "pc";
     var url = 'images/' + directory + '/mv' + index + '.jpg';
     var hero = document.querySelector(".hero");
     if (hero) {
       hero.style.backgroundImage = "url(" + url + ")";
+    }
+
+    var navEl = document.querySelector('.site-nav');
+    if (navEl) {
+      var onScroll = function(){
+        if (window.scrollY > 8) navEl.classList.add('is-scrolled');
+        else navEl.classList.remove('is-scrolled');
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
     }
   })
