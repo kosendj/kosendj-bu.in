@@ -19,32 +19,36 @@ def h(text)
   CGI.escapeHTML(text.to_s)
 end
 
-WRAP_STYLE = "font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;line-height:1.75;letter-spacing:.04em;color:#1a1a2e;"
+FONT_JP    = "'Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic',sans-serif"
+FONT_JP_MI = "'Hiragino Mincho ProN','Yu Mincho','Zen Old Mincho',serif"
+FONT_MONO  = "'SFMono-Regular','Menlo','Consolas','Liberation Mono',monospace"
 
-H2_STYLE = 'font-size:1.05rem;font-weight:700;letter-spacing:.24em;color:#6f4bff;border-left:4px solid #6f4bff;padding:2px 0 2px 12px;margin:0 0 6px;text-transform:uppercase;'
-H2_SUB_STYLE = 'font-size:.82rem;letter-spacing:.16em;color:#6b6e80;margin:0 0 14px;padding-left:16px;'
+WRAP_STYLE = "font-family:#{FONT_JP};line-height:1.85;letter-spacing:.04em;color:#0a0a0a;"
 
-LABEL_STYLE = 'display:block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:#6f4bff;margin-bottom:2px;'
-VALUE_STYLE = 'display:block;font-size:1rem;color:#1a1a2e;'
+H2_STYLE = "font-family:#{FONT_MONO};font-size:.82rem;font-weight:700;letter-spacing:.32em;color:#0a0a0a;border-left:3px solid #00e0bf;padding:2px 0 2px 14px;margin:0 0 6px;text-transform:uppercase;"
+H2_SUB_STYLE = "font-family:#{FONT_JP_MI};font-size:.95rem;letter-spacing:.2em;color:#6c685e;margin:0 0 18px;padding-left:17px;"
 
-LINK_STYLE = 'color:#6f4bff;border-bottom:1px solid rgba(111,75,255,.4);'
+LABEL_STYLE = "display:block;font-family:#{FONT_MONO};font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:#6c685e;margin-bottom:4px;"
+VALUE_STYLE = "display:block;font-family:#{FONT_JP_MI};font-weight:700;font-size:1.1rem;color:#0a0a0a;letter-spacing:.02em;"
 
-NOTICE_STYLE = 'background:#fff7e6;border:1px solid #ffd97a;border-radius:12px;padding:14px 18px;margin:12px 0 24px;color:#5a4500;'
-NOTICE_TITLE_STYLE = 'font-weight:700;letter-spacing:.08em;color:#8a5a00;margin:0 0 6px;'
+LINK_STYLE = 'color:#00e0bf;border-bottom:1px solid rgba(0,224,191,.4);'
 
-TABLE_STYLE = 'width:100%;border-collapse:collapse;margin:6px 0 18px;'
-TR_STYLE = 'border-bottom:1px solid rgba(111,75,255,.15);'
-TIME_TD_STYLE = 'padding:12px 16px 12px 8px;width:80px;color:#6f4bff;font-weight:700;letter-spacing:.08em;font-variant-numeric:tabular-nums;vertical-align:top;'
-DJ_TD_STYLE = 'padding:12px 8px 12px 0;vertical-align:top;'
-SCREEN_NAME_STYLE = 'display:block;font-weight:700;font-size:1rem;color:#1a1a2e;margin-bottom:2px;'
-GENRE_STYLE = 'display:block;color:#5a5d70;font-size:.95rem;line-height:1.5;'
+NOTICE_STYLE = "background:#0a0a0a;border:1px solid rgba(243,239,228,.28);border-left:3px solid #00e0bf;border-radius:0;padding:20px 22px;margin:12px 0 28px;color:#f3efe4;"
+NOTICE_TITLE_STYLE = "font-family:#{FONT_MONO};font-size:.78rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#00e0bf;margin:0 0 8px;"
 
-CARD_STYLE = 'background:#fafaff;border:1px solid rgba(111,75,255,.18);border-radius:14px;padding:18px 20px;margin:0 0 24px;'
+TABLE_STYLE = 'width:100%;border-collapse:collapse;margin:6px 0 24px;'
+TR_STYLE = 'border-bottom:1px solid rgba(10,10,10,.18);'
+TIME_TD_STYLE = "padding:14px 18px 14px 8px;width:90px;font-family:#{FONT_MONO};color:#0a0a0a;font-weight:700;font-size:1.05rem;letter-spacing:.06em;font-variant-numeric:tabular-nums;vertical-align:top;"
+DJ_TD_STYLE = 'padding:14px 8px 14px 0;vertical-align:top;'
+SCREEN_NAME_STYLE = "display:block;font-family:#{FONT_JP_MI};font-weight:700;font-size:1.05rem;color:#0a0a0a;margin-bottom:4px;letter-spacing:.02em;"
+GENRE_STYLE = 'display:block;color:#6c685e;font-size:.9rem;line-height:1.6;'
 
-INFO_GRID_STYLE = 'display:flex;flex-wrap:wrap;gap:18px 28px;margin:6px 0 0;'
+CARD_STYLE = 'background:#efe9d9;border:1px solid #c8c0a4;border-radius:0;padding:22px 24px;margin:0 0 28px;'
+
+INFO_GRID_STYLE = 'display:flex;flex-wrap:wrap;gap:20px 32px;margin:8px 0 0;'
 INFO_ITEM_STYLE = 'min-width:160px;'
 
-TITLE_STYLE = 'font-size:1.6rem;font-weight:700;letter-spacing:.12em;margin:0 0 14px;color:#1a1a2e;'
+TITLE_STYLE = "font-family:#{FONT_JP_MI};font-size:1.7rem;font-weight:700;letter-spacing:.04em;margin:0 0 16px;color:#0a0a0a;"
 
 template = ERB.new(<<~ERB, trim_mode: '-')
   <div style="<%= WRAP_STYLE %>">
@@ -108,9 +112,9 @@ template = ERB.new(<<~ERB, trim_mode: '-')
     <h2 style="<%= H2_STYLE %>">VENUE</h2>
     <p style="<%= H2_SUB_STYLE %>">会場</p>
     <div style="<%= CARD_STYLE %>">
-      <p style="margin:0 0 6px;font-weight:700;"><%= h(VENUE) %></p>
-      <p style="margin:0 0 6px;color:#4a4d60;font-size:.95rem;"><%= h(VENUE_ADDRESS) %></p>
-      <p style="margin:0;color:#4a4d60;font-size:.95rem;">東京メトロ東西線 早稲田駅 2,3b 出口より徒歩約5分</p>
+      <p style="margin:0 0 8px;font-family:<%= FONT_JP_MI %>;font-weight:700;font-size:1.15rem;letter-spacing:.04em;color:#0a0a0a;"><%= h(VENUE) %></p>
+      <p style="margin:0 0 6px;color:#6c685e;font-size:.9rem;"><%= h(VENUE_ADDRESS) %></p>
+      <p style="margin:0;color:#6c685e;font-size:.9rem;">東京メトロ東西線 早稲田駅 2,3b 出口より徒歩約5分</p>
     </div>
 
   </div>
