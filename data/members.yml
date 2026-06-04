@@ -100,9 +100,11 @@
   name: Takayuki Tominaga
   icon: "members/tominaga.jpg"
   description: |
-    a.k.a. とーかさん
-    ジャンル名にHardがついている曲は大体好きな傾向があります。
+    kosen-djでDJを始めたと思っていたら、VJになっていた。
   services:
+    -
+      name: web
+      url: https://tmng.me
     -
       name: twitter
       url: https://x.com/touka_tt
