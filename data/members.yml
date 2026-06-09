@@ -144,3 +144,11 @@
     -
       name: mixcloud
       url: https://www.mixcloud.com/SpicyCoffee66/
+- 
+  name: nikuzuki
+  icon: "members/nikuzuki.jpg"
+  description: TSUTAKE♡TALKで泣くオタク。
+  services:
+    -
+      name: twitter
+      url: https://x.com/nikuzuki_29
