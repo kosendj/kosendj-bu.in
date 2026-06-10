@@ -12,20 +12,17 @@
 -
   name: rooandqoo
   icon: "members/rooandqoo.jpg"
-  description: 双子の娘の父業をしつつ、会社勤めをしています。烏龍茶とトランスが燃料です
+  description: 釧路出身。Trance好きが高じてパーティをやったりしています
   services:
     -
       name: web
       url: https://rooandqoo.com
     -
-      name: mixcloud
-      url: https://mixcloud.com/rooandqoo
+      name: YouTube
+      url: https://www.youtube.com/@rooandqoo
     -
       name: twitter
       url: https://x.com/rooandqoo
-    -
-      name: tumblr
-      url: https://rooandqoo.tumblr.com/
 -
   name: jigsaw
   icon: "members/jigsaw.jpg"
