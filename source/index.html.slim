@@ -17,11 +17,17 @@ nav.site-nav data-nav="main"
       li = link_to "DJ", "#djs"
       li = link_to "GALLERY", "#gallery"
       li = link_to "ACCESS", "#contact"
+      li.nav-links__discord
+        a href="https://discord.com/invite/FNE9C3ZsSv" target="_blank" rel="noopener" title="Discord" aria-label="Discord"
+          i.fa-brands.fa-discord
   #nav-menu.nav-mobile data-nav-menu="true"
     = link_to "EVENT", "#events"
     = link_to "DJ", "#djs"
     = link_to "GALLERY", "#gallery"
     = link_to "ACCESS", "#contact"
+    a.nav-mobile__discord href="https://discord.com/invite/FNE9C3ZsSv" target="_blank" rel="noopener"
+      i.fa-brands.fa-discord
+      span Discord
 
 section.hero#home
   video.hero__video autoplay=true muted=true loop=true playsinline=true preload="none" poster=image_path("pc/mv0.jpg") aria-hidden="true" data-desktop-video="true"
@@ -208,6 +214,12 @@ section.section.section--contact#contact
 footer.site-footer
   .container
     = image_tag "logo_b.png", alt: "kosendj-bu", class: "footer-logo"
+    .footer-social
+      p.footer-social__lead
+        | 高専DJ部はDiscordサーバーを開設しました。開催アナウンス、いい音楽の共有、雑談など…高専DJ部が気になっている方はどなたでもどうぞ。ぜひお気軽に部室をのぞきに来てください。
+      a.footer-social__link href="https://discord.com/invite/FNE9C3ZsSv" target="_blank" rel="noopener" title="Discord" aria-label="Discord"
+        i.fa-brands.fa-discord
+        span Discord
     p.footer-copyright
       | &copy; #{Time.now.year} kosendj-bu
 
