@@ -5,6 +5,5 @@
   },
   "devDependencies": {
     "sass": "^1.105.2"
-  },
-  "packageManager": "pnpm@10.28.2"
+  }
 }

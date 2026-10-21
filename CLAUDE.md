@@ -63,7 +63,10 @@ Middleman の Data Files 機能により `data.event`、`data.members` として
 
 ### ランタイムバージョン
 
-`.ruby-version`、`.node-version`、`package.json#packageManager` で管理。
+`mise.toml` の `[tools]` で Ruby / Node / pnpm をまとめて管理する（`mise install` で揃う）。
+バージョンはメジャー（Ruby はマイナー）までしか固定していない。Dependabot は `mise.toml` を更新しないので、exact pin にすると手で上げるまで更新が止まるからである。
+CI では `jdx/mise-action` が Node / pnpm を、`ruby/setup-ruby` が `mise.toml` を読んで Ruby を入れる。
+Dockerfile の Ruby だけはベースイメージのタグで決まり、mise は `MISE_DISABLE_TOOLS=ruby` で Node / pnpm だけを扱う。
 
 ## イベント更新時の変更箇所
 

@@ -1,0 +1,4 @@
+# pnpm 11 は設定を package.json の pnpm フィールドではなくこのファイルから読む。
+# @parcel/watcher（sass --watch の依存）はプリビルド済みバイナリを使うので build script は走らせない。
+allowBuilds:
+  "@parcel/watcher": false

@@ -5,7 +5,8 @@
 ```shell
 $ git clone git@github.com:kosendj/kosendj-bu.in.git
 $ cd kosendj-bu.in
-$ bundle install #require ruby
+$ mise install  # mise.toml の Ruby / Node / pnpm を入れる
+$ bundle install
 $ pnpm install
 $ bundle exec middleman server
 ```

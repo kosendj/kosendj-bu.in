@@ -1,0 +1,4 @@
+[tools]
+node = "26"
+pnpm = "11"
+ruby = "3.4"

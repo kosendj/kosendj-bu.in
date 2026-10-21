@@ -20,3 +20,9 @@
 /tmp
 
 node_modules
+
+# mise のローカル上書き設定
+mise.local.toml
+
+# docker compose の bind mount 内で pnpm が作るストア
+.pnpm-store
