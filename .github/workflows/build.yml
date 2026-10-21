@@ -2,18 +2,24 @@ on:
   push:
   pull_request:
 
+env:
+  # Ruby は ruby/setup-ruby が mise.toml を読んで入れるので mise 側では扱わない
+  MISE_DISABLE_TOOLS: ruby
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: pnpm/action-setup@v6.1.0
+      - uses: jdx/mise-action@v5
+      - name: Get pnpm store directory
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+      - uses: actions/cache@v6
         with:
-          version: 10.28.2
-      - uses: actions/setup-node@v7
-        with:
-          node-version-file: .node-version
-          cache: pnpm
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
       - run: pnpm install --frozen-lockfile
 
       - uses: ruby/setup-ruby@v1
