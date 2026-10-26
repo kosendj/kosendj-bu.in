@@ -4,6 +4,6 @@
     "build": "sass source/stylesheets/all.css.scss .tmp/all.css"
   },
   "devDependencies": {
-    "sass": "^1.105.2"
+    "sass": "^1.106.1"
   }
 }
