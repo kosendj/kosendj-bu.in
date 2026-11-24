@@ -1,19 +1,17 @@
 require 'yaml'
 
-NUMBER = 42
-DATE = '2026.06.13 (Sat.) 14:00-20:00'
-TWIPLA_URL = 'https://twipla.jp/events/727590'
+NUMBER = 43
+DATE = '2026.12.19 (Sat.) 14:00-20:00'
+TWIPLA_URL = 'https://twipla.jp/events/752251'
 
 INPUT = <<~TEXT
   名前	ジャンル	所要時間	開始時間	終了時刻
-  あそなす	CDJはやり方忘れてしまったので楽器でいい感じに...	0:30:00	14:00	14:30
-  うなすけ	Progressive House軸	0:45:00	14:30	15:15
-  Takayuki Tominaga	たのしい	0:45:00	15:15	16:00
-  Rooq	速いハウス	0:45:00	16:00	16:45
-  furaji	5月で現在の会社が無くなりまstep	0:45:00	16:45	17:30
-  ちゃんにく	グルミク収録曲	0:45:00	17:30	18:15
-  sylph01/G4きゅーぶ / いかるが	RubyIlluminationsの残り物(170+)	1:00:00	18:15	19:15
-  HolyGrail	RubyIlluminations 後夜祭	0:45:00	19:15	20:00
+  うなすけ	EDM, Dub Step, Big Room	1:00:00	14:00	15:00
+  furaji		1:00:00	15:00	16:00
+  HolyGrail	忘年会	1:00:00	16:00	17:00
+  DS		1:00:00	17:00	18:00
+  sorah		1:00:00	18:00	19:00
+  Takayuki Tominaga	年忘れ	1:00:00	19:00	20:00
 TEXT
 
 lines = INPUT.lines.map(&:chomp).reject(&:empty?)
